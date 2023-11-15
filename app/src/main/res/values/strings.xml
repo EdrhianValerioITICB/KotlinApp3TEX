@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">KotlinApp3TEX</string>
     <string name="title">Titulos</string>
+    <string name="log">LogIn</string>
 </resources>
