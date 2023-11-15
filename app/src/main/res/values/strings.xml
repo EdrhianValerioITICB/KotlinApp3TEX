@@ -2,4 +2,5 @@
     <string name="app_name">KotlinApp3TEX</string>
     <string name="title">Titulos</string>
     <string name="log">LogIn</string>
+    <string name="back">Back</string>
 </resources>
