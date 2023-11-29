@@ -4,8 +4,8 @@
     <corners
         android:radius="30dp" />
     <gradient
-        android:endColor = "#FFFFFF"
-        android:startColor = "#CCECFD"
+        android:endColor = "@color/boton_claro_end"
+        android:startColor = "@color/boton_claro_start"
         android:centerY="0.5"
         android:type="linear"
         android:angle = "90" />

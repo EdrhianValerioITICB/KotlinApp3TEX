@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="fondo1">#FF000000</color>
-    <color name="fondo2">#FFFFFFFF</color>
-    <color name="txt">#FF000000</color>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo para modo claro -->
+    <color name="fondo_claro_start">#FFFFFFFF</color>
+    <color name="fondo_claro_end">#FF000000</color>
+
+    <!-- Fondo para modo oscuro -->
+    <color name="fondo_oscuro_start">#5b5b5b</color>
+    <color name="fondo_oscuro_center">#000000</color>
+    <color name="fondo_oscuro_end">#000000</color>
+
+    <!-- Boton para modo claro -->
+    <color name="boton_claro_start">#CCECFD</color>
+    <color name="boton_claro_end">#FFFFFFFF</color>
+
+    <!-- Boton para modo oscuro -->
+    <color name="boton_oscuro_start">#0c212F</color>
+    <color name="boton_oscuro_center">#0c212F</color>
+    <color name="boton_oscuro_end">#0a0a0a</color>
+
+    <!-- Boton para cancelar -->
+    <color name="boton_cancelar_start">#D73434</color>
+    <color name="botoncancelar_center">#5DDE3E3E</color>
+    <color name="botoncancelar_end">#5DDE3E3E</color>
+
+    <!-- Texto para modo claro -->
+    <color name="txt_claro">#FF000000</color>
+
+    <!-- Texto para modo oscuro -->
+    <color name="txt_oscuro">#FFFFFF</color>
+
+    <!-- shadow color -->
+    <color name="shadow_color">#000000</color>
 </resources>
