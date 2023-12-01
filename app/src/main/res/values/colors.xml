@@ -20,14 +20,14 @@
 
     <!-- Boton para cancelar -->
     <color name="boton_cancelar_start">#D73434</color>
-    <color name="botoncancelar_center">#5DDE3E3E</color>
-    <color name="botoncancelar_end">#5DDE3E3E</color>
+    <color name="boton_cancelar_center">#5DDE3E3E</color>
+    <color name="boton_cancelar_end">#5DDE3E3E</color>
 
     <!-- Texto para modo claro -->
-    <color name="txt_claro">#FF000000</color>
+    <color name="txt_negro">#FF000000</color>
 
     <!-- Texto para modo oscuro -->
-    <color name="txt_oscuro">#FFFFFF</color>
+    <color name="txt_blanco">#FFFFFF</color>
 
     <!-- shadow color -->
     <color name="shadow_color">#000000</color>

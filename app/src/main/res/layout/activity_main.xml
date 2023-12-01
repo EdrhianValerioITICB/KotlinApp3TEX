@@ -7,17 +7,8 @@
     android:background="@drawable/background_dark">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="212dp"
-        android:layout_height="42dp"
-        android:background="@drawable/button_cancel"
-        android:backgroundTint="@null"
-        android:cornerRadius="30dp"
-        android:shadowColor="@color/boton_oscuro_end"
-        android:shadowDy="10000"
-        android:shadowRadius="1000"
+        style="@style/NormalButton"
         android:text="Button"
-        android:textColor="@color/txt_claro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
