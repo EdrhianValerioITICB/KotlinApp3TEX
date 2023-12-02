@@ -3,12 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/Theme.KotlinApp3TEX"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/background_light">
 
 
     <TextView
         android:id="@+id/textView"
         style="@style/Titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="20dp"
@@ -18,10 +22,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_langudasage"
+        android:id="@+id/btn_language"
         style="@style/NormalButton"
         android:layout_marginTop="63dp"
 
+        android:shadowColor="@color/shadow_color"
         android:text="@string/language"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -29,36 +34,59 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/btn_laasdnguage"
+        android:id="@+id/btn_sound"
         style="@style/NormalButton"
         android:layout_marginTop="41dp"
-
-        android:text="@string/language"
+        android:text="@string/sound"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_langudasage" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_language" />
 
     <Button
-        android:id="@+id/btn_laadnguage"
+        android:id="@+id/btn_theme"
         style="@style/NormalButton"
         android:layout_marginTop="41dp"
-
-        android:text="@string/language"
+        android:text="@string/theme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_laasdnguage" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_sound" />
 
     <Button
-        android:id="@+id/btn_languagedas"
+        android:id="@+id/btn_pieces_style"
         style="@style/NormalButton"
         android:layout_marginTop="41dp"
-
-        android:text="@string/language"
+        android:text="@string/pieces_style"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_laadnguage" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_theme" />
+
+    <Button
+        style="@style/BackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@style/BackButton"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_account" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        style="@style/BackButton"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
