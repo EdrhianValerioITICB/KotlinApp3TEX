@@ -47,7 +47,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title"
-        app:srcCompat="@drawable/table" />
+        app:srcCompat="@drawable/img_tutorial_one" />
 
     <TextView
         android:id="@+id/tv_tutorial_body"
@@ -69,16 +69,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/ib_back"
-        style="@style/BackButton"
-        android:layout_width="wrap_content"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="82dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tv_page"
-        app:srcCompat="@drawable/ic_btn_back" />
 
     <ImageButton
         android:id="@+id/ib_foward"
