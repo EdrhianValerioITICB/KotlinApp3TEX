@@ -10,8 +10,8 @@
     <string name="blocked_achievements">LOGROS PENDIENTES</string>
     <string name="configuration">CONFIGURACIÓN</string>
     <string name="language">IDIOMA</string>
-    <string name="sound">SONIDO</string>
-    <string name="theme">THEME</string>
+    <string name="sound">Sonido</string>
+    <string name="theme">TEMA</string>
     <string name="pieces_style">ESTILO DE PIEZAS</string>
     <string name="tutorial">TUTORIAL</string>
     <string name="name">Nombre</string>

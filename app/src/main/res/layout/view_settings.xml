@@ -9,20 +9,16 @@
 
 
     <TextView
-        android:id="@+id/textView"
-        style="@style/Titulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:id="@+id/tv_title"
+        style="@style/Title"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="20dp"
         android:text="@string/configuration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_language"
+        android:id="@+id/btn_dark"
         style="@style/NormalButton"
         android:layout_marginTop="63dp"
 
@@ -31,17 +27,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
     <Button
-        android:id="@+id/btn_sound"
+        android:id="@+id/btn_light"
         style="@style/NormalButton"
         android:layout_marginTop="41dp"
         android:text="@string/sound"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_language" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_dark" />
 
     <Button
         android:id="@+id/btn_theme"
@@ -51,10 +47,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sound" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_light" />
 
     <Button
-        android:id="@+id/btn_pieces_style"
+        android:id="@+id/btn_apply"
         style="@style/NormalButton"
         android:layout_marginTop="41dp"
         android:text="@string/pieces_style"
@@ -69,7 +65,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btn_account"
         style="@style/BackButton"
         android:layout_width="41dp"
         android:layout_height="41dp"
@@ -80,7 +76,7 @@
         app:srcCompat="@drawable/ic_account" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btn_menu"
         style="@style/BackButton"
         android:layout_width="41dp"
         android:layout_height="41dp"

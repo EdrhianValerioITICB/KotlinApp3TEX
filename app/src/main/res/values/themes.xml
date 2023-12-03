@@ -6,13 +6,15 @@
         <item name="android:layout_height">640dp</item>
         <item name="android:layout_width">340dp</item>
     </style>
-    <style name="Titulo" parent="@android:style/TextAppearance.Medium">
+    <style name="Title" parent="@android:style/TextAppearance.Medium">
         <item name="android:layout_height">114dp</item>
-        <item name="android:layout_width">257dp</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:textColor">@color/txt_negro</item>
         <item name="android:fontFamily">@font/roboto_condensed_bold</item>
         <item name="android:textSize">48dp</item>
         <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
     </style>
 
     <style name="NormalButton" parent="@android:style/TextAppearance.Medium">
@@ -28,10 +30,37 @@
     </style>
 
     <style name="CancelButton" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/txt_negro</item>
         <item name="android:background">@drawable/button_background_light</item>
     </style>
 
+    <style name="ShortBodyText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/txt_negro</item>
+        <item name="android:layout_width">224dp</item>
+        <item name="android:layout_height">23dp</item>
+    </style>
+
+    <style name="NumberProgression" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_height">25dp</item>
+        <item name="android:textColor">@color/txt_negro</item>
+        <item name="android:layout_width">224dp</item>
+    </style>
+
+    <style name="LongBodyText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/txt_negro</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:justificationMode">inter_word</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Table" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintDimensionRatio">1:1</item>
+    </style>
+
     <style name="BackButton">
+        <item name="android:textColor">@color/txt_negro</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">8dp</item>
@@ -49,5 +78,8 @@
         <item name="colorPrimaryDark">@color/txt_negro</item>
         <item name="colorAccent">@color/txt_negro</item>
     </style>
-    <style name="Theme.KotlinApp3TEX" parent="Base.Theme.KotlinApp3TEX" />
+    <style name="Theme.KotlinApp3TEX" parent="Base.Theme.KotlinApp3TEX" >
+    </style>
+
+
 </resources>
