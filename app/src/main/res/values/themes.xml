@@ -31,13 +31,32 @@
 
     <style name="CancelButton" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/txt_negro</item>
-        <item name="android:background">@drawable/button_background_light</item>
+        <item name="android:layout_width">212dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_background_cancel</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:elevation">20dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="waitngText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_height">114dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/txt_negro</item>
+        <item name="android:fontFamily">@font/roboto_condensed_bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
     </style>
 
     <style name="ShortBodyText" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/txt_negro</item>
         <item name="android:layout_width">224dp</item>
         <item name="android:layout_height">23dp</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
     <style name="NumberProgression" parent="@android:style/TextAppearance.Medium">
@@ -51,6 +70,7 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:justificationMode">inter_word</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="Table" parent="@android:style/TextAppearance.Medium">

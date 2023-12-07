@@ -51,9 +51,11 @@
     <string name="logout">LogOut</string>
     <string name="privacy_policy">Política de Privacidad</string>
     <string name="login">LOGIN</string>
+    <string name="login2">login</string>
     <string name="casual">CASUAL</string>
     <string name="competitive">COMPETITIVO</string>
     <string name="create">CREAR</string>
+    <string name="join">UNRSE</string>
     <string name="machine">MÁQUINA</string>
     <string name="two_players">2 JUGADORES</string>
     <string name="start">EMPEZAR</string>
@@ -65,4 +67,5 @@
     <string name="light">CLARO</string>
     <string name="classic">CLÁSICO</string>
     <string name="extreme">EXTREME</string>
+    <string name="no_acount">No tienes cuenta?</string>
 </resources>

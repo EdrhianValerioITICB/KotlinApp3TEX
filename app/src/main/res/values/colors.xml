@@ -28,7 +28,10 @@
 
     <!-- Texto para modo oscuro -->
     <color name="txt_blanco">#FFFFFF</color>
+    <!-- Texto gris -->
+    <color name="txt_gris">#757575</color>
 
+    <color name="txt_azul">#0000FF</color>
     <!-- shadow color -->
     <color name="shadow_color">#000000</color>
 </resources>

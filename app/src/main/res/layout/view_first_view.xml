@@ -9,61 +9,53 @@
 
 
     <TextView
-        android:id="@+id/tv_title"
+        android:id="@+id/g_title"
         style="@style/Title"
         android:layout_marginTop="60dp"
-        android:text="@string/offline"
+        android:text="@string/game_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_dark"
+        android:id="@+id/btn_online"
         style="@style/NormalButton"
-        android:layout_marginTop="63dp"
+        android:layout_marginTop="50dp"
 
         android:shadowColor="@color/shadow_color"
-        android:text="@string/machine"
+        android:text="@string/online"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+
 
     <Button
-        android:id="@+id/btn_light"
+        android:id="@+id/btn_offline"
         style="@style/NormalButton"
         android:layout_marginTop="41dp"
-        android:text="@string/two_players"
+        android:text="@string/offline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_dark" />
-
-    <Button
-        android:id="@+id/btn_apply"
-        style="@style/NormalButton"
-        android:layout_marginTop="124dp"
-        android:text="@string/start"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_light" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_online" />
 
     <Button
         style="@style/BackButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/btn_account"
-        style="@style/BackButton"
+    <TextView
+        android:id="@+id/tv_login"
+        android:text="@string/login2"
+        style="@style/LongBodyText"
         android:layout_width="41dp"
         android:layout_height="41dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_account" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btn_menu"
@@ -75,4 +67,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_menu" />
 
+    <ImageView
+        android:id="@+id/iv_logo"
+        style="@style/Table"
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/g_title"
+        app:srcCompat="@drawable/img_logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

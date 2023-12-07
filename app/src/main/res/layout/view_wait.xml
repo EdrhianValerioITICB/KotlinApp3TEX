@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.KotlinApp3TEX"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_light">
+
+
+    <TextView
+        android:id="@+id/g_text"
+        style="@style/waitngText"
+        android:layout_width="261dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="81dp"
+        android:text="@string/matchmaking_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_account" />
+
+    <Button
+        android:id="@+id/btn_online"
+        style="@style/CancelButton"
+        android:layout_marginTop="267dp"
+        android:shadowColor="@color/shadow_color"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/g_text" />
+
+
+    <ImageButton
+        android:id="@+id/btn_account"
+        style="@style/BackButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_account2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
