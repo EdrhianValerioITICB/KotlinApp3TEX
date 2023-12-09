@@ -49,6 +49,7 @@
         style="@style/NormalButton"
         android:layout_height="0dp"
         android:layout_marginTop="124dp"
+        android:onClick="toBack"
         android:text="@string/apply_changes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

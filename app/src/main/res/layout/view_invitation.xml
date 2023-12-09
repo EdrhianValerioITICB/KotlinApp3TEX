@@ -21,6 +21,7 @@
         android:id="@+id/btn_join"
         style="@style/NormalButton"
         android:layout_marginTop="27dp"
+        android:onClick="toGame"
         android:shadowColor="@color/shadow_color"
         android:text="@string/join"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,8 +33,9 @@
         android:id="@+id/btn_create"
         style="@style/NormalButton"
         android:layout_marginTop="27dp"
+        android:onClick="toGame"
         android:shadowColor="@color/shadow_color"
-        android:text="@string/join"
+        android:text="@string/create"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,6 +44,7 @@
 
     <Button
         style="@style/BackButton"
+        android:onClick="toBack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -52,6 +55,7 @@
         android:layout_height="41dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:onClick="toProfile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_account" />

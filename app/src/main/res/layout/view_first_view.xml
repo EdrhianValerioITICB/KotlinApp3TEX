@@ -22,6 +22,7 @@
         style="@style/NormalButton"
         android:layout_marginTop="50dp"
 
+        android:onClick="toOnline"
         android:shadowColor="@color/shadow_color"
         android:text="@string/online"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,11 +31,11 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
 
 
-
     <Button
         android:id="@+id/btn_offline"
         style="@style/NormalButton"
         android:layout_marginTop="41dp"
+        android:onClick="toOffline"
         android:text="@string/offline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -48,12 +49,13 @@
 
     <TextView
         android:id="@+id/tv_login"
-        android:text="@string/login2"
         style="@style/LongBodyText"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:onClick="toLogin"
+        android:text="@string/login2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

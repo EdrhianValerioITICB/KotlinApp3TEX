@@ -22,6 +22,7 @@
         android:id="@+id/btn_offline"
         style="@style/NormalButton"
         android:layout_marginTop="41dp"
+        android:onClick="toUnlockedAchivements"
         android:text="@string/unlocked_achivements"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"

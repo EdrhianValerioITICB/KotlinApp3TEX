@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/g_text"
-        style="@style/waitngText"
+        style="@style/WaitingText"
         android:layout_width="261dp"
         android:layout_height="39dp"
         android:layout_marginStart="81dp"
@@ -26,8 +26,9 @@
         android:id="@+id/btn_online"
         style="@style/CancelButton"
         android:layout_marginTop="267dp"
+        android:onClick="toBack"
         android:shadowColor="@color/shadow_color"
-        android:text="@string/login"
+        android:text="@string/cancel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"

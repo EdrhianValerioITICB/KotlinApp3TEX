@@ -41,7 +41,7 @@
         <item name="android:textAlignment">center</item>
     </style>
 
-    <style name="waitngText" parent="@android:style/TextAppearance.Medium">
+    <style name="WaitingText" parent="@android:style/TextAppearance.Medium">
         <item name="android:layout_height">114dp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:textColor">@color/txt_negro</item>
@@ -80,6 +80,7 @@
     </style>
 
     <style name="BackButton">
+        <item name="android:onClick">toBack</item>
         <item name="android:textColor">@color/txt_negro</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -90,7 +91,29 @@
         <item name="android:drawablePadding">2dp</item>
         <item name="android:text">Atrás</item>
     </style>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    <style name="ProfileButton">
+        <item name="android:onClick">toProfile</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawableLeft">@drawable/ic_btn_back</item>
+        <item name="android:drawablePadding">2dp</item>
+    </style>
+
+    <style name="FowardButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawableLeft">@drawable/ic_btn_back</item>
+        <item name="android:drawablePadding">2dp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:typeface">serif</item>
         <item name="android:textColor">#0000FF</item>
 
@@ -98,7 +121,7 @@
         <item name="colorPrimaryDark">@color/txt_negro</item>
         <item name="colorAccent">@color/txt_negro</item>
     </style>
-    <style name="Theme.KotlinApp3TEX" parent="Base.Theme.KotlinApp3TEX" >
+    <style name="Theme.KotlinApp3TEX" parent="Theme.AppCompat.Light.NoActionBar" >
     </style>
 
 

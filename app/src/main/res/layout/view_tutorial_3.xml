@@ -83,11 +83,12 @@
 
     <ImageButton
         android:id="@+id/ib_foward"
-        style="@style/BackButton"
+        style="@style/FowardButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="41dp"
         android:layout_marginBottom="82dp"
+        android:onClick="toTutorialFour"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tv_page"
         app:srcCompat="@drawable/ic_btn_foward" />
