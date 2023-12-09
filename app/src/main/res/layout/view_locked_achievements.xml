@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_light">
 
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="293dp"
+        android:layout_height="667dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TableLayout
         android:id="@+id/tableLayout2"
@@ -132,16 +143,7 @@
 
     </TableLayout>
 
-    <Button
-        android:id="@+id/btn_dark"
-        style="@style/NormalButton"
 
-        android:shadowColor="@color/shadow_color"
-        android:text="@string/unlocked_achivements"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="532dp" />
 
     <Button
         style="@style/BackButton"
@@ -150,7 +152,7 @@
 
     <ImageButton
         android:id="@+id/btn_account"
-        style="@style/BackButton"
+        style="@style/ProfileButton"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginTop="8dp"
@@ -167,6 +169,14 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_menu" />
+        app:srcCompat="@drawable/ic_menu"
+        android:onClick="showMenuFragment" />
+
+    <View
+        android:id="@+id/transparentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:visibility="gone"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
