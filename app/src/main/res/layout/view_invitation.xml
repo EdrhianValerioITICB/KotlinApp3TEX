@@ -54,12 +54,6 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextCode" />
 
 
-    <Button
-        style="@style/BackButton"
-        android:onClick="toBack"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageButton
         android:id="@+id/btn_account"
         style="@style/ProfileButton"
