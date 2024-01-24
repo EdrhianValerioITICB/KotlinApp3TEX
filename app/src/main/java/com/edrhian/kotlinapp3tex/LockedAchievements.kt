@@ -6,8 +6,15 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.edrhian.kotlinapp3tex.controller.AdapterAchievements
+import com.edrhian.kotlinapp3tex.data.Achievement
 
 class LockedAchievements : AppCompatActivity() {
+
+    private lateinit var adapterAchievements: AdapterAchievements
+    private lateinit var recyclerView: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.view_locked_achievements)
@@ -18,7 +25,23 @@ class LockedAchievements : AppCompatActivity() {
         startActivity(intent)
     }
 
+    override fun onStart() {
+        super.onStart()
+        val layoutManager = LinearLayoutManager(this)
+        recyclerView = findViewById(R.id.rv_list_achievements)
+        recyclerView.layoutManager = layoutManager
+        recyclerView.setHasFixedSize(true)
+        adapterAchievements = AdapterAchievements(getAchievementsList())
+        recyclerView.adapter = adapterAchievements
+    }
 
+    fun getAchievementsList() : ArrayList<Achievement>{
+        var achievementsList : ArrayList<Achievement> = ArrayList()
+
+        achievementsList.add(Achievement(6, "hola", "Adios", R.mipmap.ic_launcher_round, 1))
+
+        return achievementsList
+    }
 
     fun showMenuFragment(view: View) {
         val menuFragment = MenuFragment()
