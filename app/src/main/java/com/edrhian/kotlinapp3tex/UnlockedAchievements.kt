@@ -5,11 +5,50 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.edrhian.kotlinapp3tex.controller.AdapterAchievements
+import com.edrhian.kotlinapp3tex.data.Achievement
 
 class UnlockedAchievements : AppCompatActivity() {
+
+    private lateinit var adapterAchievements: AdapterAchievements
+    private lateinit var recyclerView: RecyclerView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.view_unlocked_achievements)
+
+    }
+//    override fun onCreateView(
+//        inflater: LayoutInflater,
+//        container: ViewGroup?,
+//        savedInstanceState: Bundle?
+//    ): View? {
+//        val rootView : View = inflater.inflate(R.layout.fragment_tareas,container,false)
+//        return rootView
+//    }
+
+    override fun onStart() {
+        super.onStart()
+        val layoutManager = LinearLayoutManager(this)
+        recyclerView = findViewById(R.id.rv_list_achievements)
+        recyclerView.layoutManager = layoutManager
+        recyclerView.setHasFixedSize(true)
+        adapterAchievements = AdapterAchievements(getAchievementsList())
+        recyclerView.adapter = adapterAchievements
+    }
+
+    fun getAchievementsList() : ArrayList<Achievement>{
+        var achievementsList : ArrayList<Achievement> = ArrayList()
+
+        achievementsList.add(Achievement(1, "hola", "Adios", R.mipmap.ic_launcher_round, 1))
+        achievementsList.add(Achievement(2, "hola", "Adios", R.mipmap.ic_launcher_round, 1))
+        achievementsList.add(Achievement(3, "hola", "Adios", R.mipmap.ic_launcher_round, 1))
+        achievementsList.add(Achievement(4, "hola", "Adios", R.mipmap.ic_launcher_round, 1))
+        achievementsList.add(Achievement(5, "hola", "Adios", R.mipmap.ic_launcher_round, 1))
+
+        return achievementsList
     }
 
     fun toProfile(view: View) {
