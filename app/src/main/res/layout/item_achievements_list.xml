@@ -2,8 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NormalButton"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginStart="25dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="15dp"
     tools:context=".UnlockedAchievements">
 
     <LinearLayout
@@ -14,18 +19,27 @@
 
         <TextView
             android:id="@+id/tv_name_tarea"
+            style="@style/AchievementTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="start|top"
-            android:text="Titulo Logro" />
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:text="Titulo Logro"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_desc_tarea"
+            style="@style/AchievementDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="start|top"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
             android:text="Aqui va la descripción del logro" />
 
     </LinearLayout>

@@ -15,6 +15,7 @@ class AdapterAchievements(private val achievementsList: ArrayList<Achievement>) 
 
     lateinit var context: Context
 
+    var onItemClick : ((Achievement) -> Unit)? = null
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         var idTarea : Int = 0
         var tareaName : TextView = itemView.findViewById(R.id.tv_name_tarea)
@@ -40,6 +41,10 @@ class AdapterAchievements(private val achievementsList: ArrayList<Achievement>) 
         holder.tareaDesc.text = tarea.desc
         holder.tareaImg.setImageResource(tarea.image)
         holder.tareaUser = tarea.user
+
+        holder.itemView.setOnClickListener{
+            onItemClick?.invoke(tarea)
+        }
     }
 
 }

@@ -1,8 +1,10 @@
 package com.edrhian.kotlinapp3tex
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -12,6 +14,7 @@ import com.edrhian.kotlinapp3tex.data.Achievement
 
 class UnlockedAchievements : AppCompatActivity() {
 
+    lateinit var context: Context
     private lateinit var adapterAchievements: AdapterAchievements
     private lateinit var recyclerView: RecyclerView
 
@@ -37,6 +40,10 @@ class UnlockedAchievements : AppCompatActivity() {
         recyclerView.setHasFixedSize(true)
         adapterAchievements = AdapterAchievements(getAchievementsList())
         recyclerView.adapter = adapterAchievements
+
+        adapterAchievements.onItemClick  = {
+            Toast.makeText(this, "ID: " + it.id, Toast.LENGTH_SHORT).show()
+        }
     }
 
     fun getAchievementsList() : ArrayList<Achievement>{
