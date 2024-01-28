@@ -36,6 +36,7 @@
         <activity android:name=".SignUp"></activity>
         <activity android:name=".Sound"></activity>
         <activity android:name=".Theme"></activity>
+        <activity android:name=".TutorialMainViewPager"></activity>
         <activity android:name=".TutorialOne"></activity>
         <activity android:name=".TutorialTwo"></activity>
         <activity android:name=".TutorialThree"></activity>

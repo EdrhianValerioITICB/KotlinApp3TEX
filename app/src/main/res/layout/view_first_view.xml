@@ -1,99 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/Theme.KotlinApp3TEX"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_light">
-
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
-        android:layout_width="293dp"
-        android:layout_height="667dp"
-        android:elevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/g_title"
-        style="@style/Title"
-        android:layout_marginTop="60dp"
-        android:text="@string/game_title"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_online"
-        style="@style/NormalButton"
-        android:layout_marginTop="50dp"
-
-        android:onClick="toOnline"
-        android:shadowColor="@color/shadow_color"
-        android:text="@string/online"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+    android:fitsSystemWindows="true">
 
 
-    <Button
-        android:id="@+id/btn_offline"
-        style="@style/NormalButton"
-        android:layout_marginTop="41dp"
-        android:onClick="toOffline"
-        android:text="@string/offline"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_online" />
-
-    <TextView
-        android:id="@+id/tv_login"
-        style="@style/LongBodyText"
-        android:layout_width="41dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:onClick="toLogin"
-        android:text="@string/login2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/btn_menu"
-        style="@style/BackButton"
-        android:layout_width="41dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_menu"
-        android:onClick="showMenuFragment" />
-
-    <ImageView
-        android:id="@+id/iv_logo"
-        style="@style/Table"
-        android:layout_width="119dp"
-        android:layout_height="119dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="68dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/g_title"
-        app:srcCompat="@drawable/img_logo" />
-
-    <View
-        android:id="@+id/transparentView"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/Theme.KotlinApp3TEX"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/transparent"
-        android:visibility="gone"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:background="@drawable/background_light">
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="293dp"
+            android:layout_height="667dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/g_title"
+            style="@style/Title"
+            android:layout_marginTop="60dp"
+            android:text="@string/game_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_online"
+            style="@style/NormalButton"
+            android:layout_marginTop="50dp"
+
+            android:onClick="toOnline"
+            android:shadowColor="@color/shadow_color"
+            android:text="@string/online"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+
+        <Button
+            android:id="@+id/btn_offline"
+            style="@style/NormalButton"
+            android:layout_marginTop="41dp"
+            android:onClick="toOffline"
+            android:text="@string/offline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_online" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            style="@style/LongBodyText"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:onClick="toLogin"
+            android:text="@string/login2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            style="@style/BackButton"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_menu"
+            android:onClick="showMenuFragment" />
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            style="@style/Table"
+            android:layout_width="119dp"
+            android:layout_height="119dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="68dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/g_title"
+            app:srcCompat="@drawable/img_logo" />
+
+        <View
+            android:id="@+id/transparentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:visibility="gone"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
