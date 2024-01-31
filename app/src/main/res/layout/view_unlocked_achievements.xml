@@ -7,222 +7,27 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_light">
 
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
-        android:layout_width="293dp"
-        android:layout_height="667dp"
-        android:elevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-
-    <TableLayout
-        android:id="@+id/tableLayout1"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/button_background_light"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout2">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/tableRow1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/textV1"
-                style="@style/LongBodyText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:text="@string/achievements_title"
-                android:textColor="@color/txt_negro"
-                app:layout_constraintBottom_toTopOf="@+id/textV2"
-                app:layout_constraintEnd_toStartOf="@+id/imageV1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textV2"
-                style="@style/LongBodyText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="103dp"
-                android:layout_marginBottom="14dp"
-                android:text="@string/achievements_description"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/imageV1"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageV1"
-                android:layout_width="80dp"
-                android:layout_height="53dp"
-                android:layout_marginBottom="9dp"
-                android:src="@drawable/ic_achievements"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/textV2"
-                app:layout_constraintTop_toTopOf="@+id/textV2"
-                app:layout_constraintVertical_bias="0.791" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </TableLayout>
-
-    <TableLayout
-        android:id="@+id/tableLayout2"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/button_background_light"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/tableRow2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/textView2"
-                style="@style/LongBodyText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:text="@string/achievements_title"
-                android:textColor="@color/txt_negro"
-                app:layout_constraintEnd_toStartOf="@+id/imageView"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView13"
-                style="@style/LongBodyText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginBottom="14dp"
-                android:text="@string/achievements_description"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="80dp"
-                android:layout_height="53dp"
-                android:src="@drawable/ic_achievements"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView2"
-                app:layout_constraintTop_toTopOf="@+id/textView2" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </TableLayout>
 
     <TextView
         android:id="@+id/tv_title"
         style="@style/Title"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="48dp"
         android:text="@string/unlocked_achivements"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/button_background_light"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/tableRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/textView20"
-                style="@style/LongBodyText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:text="@string/achievements_title"
-                android:textColor="@color/txt_negro"
-                app:layout_constraintBottom_toTopOf="@+id/textView1"
-                app:layout_constraintEnd_toStartOf="@+id/imageV"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView1"
-                style="@style/LongBodyText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginBottom="14dp"
-                android:text="@string/achievements_description"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageV"
-                android:layout_width="80dp"
-                android:layout_height="53dp"
-                android:src="@drawable/ic_achievements"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView20"
-                app:layout_constraintTop_toTopOf="@+id/textView20" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </TableLayout>
 
     <Button
         android:id="@+id/btn_dark"
         style="@style/NormalButton"
-        android:layout_marginTop="52dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="toLockedAchivements"
         android:shadowColor="@color/shadow_color"
         android:text="@string/blocked_achievements"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout1"
-        android:onClick="toLockedAchivements"/>
-
-    <Button
-        style="@style/BackButton"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
@@ -242,16 +47,47 @@
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginTop="8dp"
+        android:onClick="showMenuFragment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_menu"
-        android:onClick="showMenuFragment" />
+        app:srcCompat="@drawable/ic_menu" />
 
     <View
         android:id="@+id/transparentView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/transparent"
-        android:visibility="gone"/>
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="293dp"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/caja_lista_achievements"
+        android:layout_width="409dp"
+        android:layout_height="376dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_achievements"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

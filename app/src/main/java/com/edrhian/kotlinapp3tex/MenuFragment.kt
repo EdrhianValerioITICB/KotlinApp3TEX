@@ -45,7 +45,7 @@ class MenuFragment : Fragment() {
         }
         val btnOption3 = view.findViewById<Button>(R.id.btn_menu_tuto)
         btnOption3.setOnClickListener {
-            val intent = Intent(requireContext(), TutorialOne::class.java)
+            val intent = Intent(requireContext(), TutorialMainViewPager::class.java)
             startActivity(intent)
         }
         val btnOption4 = view.findViewById<Button>(R.id.btn_menu_logout)
