@@ -35,7 +35,7 @@ class SignUp : AppCompatActivity() {
         signUpButton = findViewById(R.id.btn_online)
 
 
-        backButton = findViewById(R.id.btn_back)
+        //backButton = findViewById(R.id.btn_back)
 
 
         signUpButton.setOnClickListener {
@@ -43,9 +43,9 @@ class SignUp : AppCompatActivity() {
         }
 
 
-        backButton.setOnClickListener {
-            super.onBackPressed()
-        }
+        //backButton.setOnClickListener {
+        //    super.onBackPressed()
+        //}
 
 
         accountButton = findViewById(R.id.btn_account)
