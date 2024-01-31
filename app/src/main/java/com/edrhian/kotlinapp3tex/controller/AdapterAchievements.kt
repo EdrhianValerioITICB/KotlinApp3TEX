@@ -17,11 +17,11 @@ class AdapterAchievements(private val achievementsList: ArrayList<Achievement>) 
 
     var onItemClick : ((Achievement) -> Unit)? = null
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        var idTarea : Int = 0
-        var tareaName : TextView = itemView.findViewById(R.id.tv_name_tarea)
-        var tareaDesc : TextView = itemView.findViewById(R.id.tv_desc_tarea)
-        var tareaImg : ImageView = itemView.findViewById(R.id.iv_tarea)
-        var tareaUser : Int = 0
+        var idAchievement : Int = 0
+        var achievementName : TextView = itemView.findViewById(R.id.tv_name_achievement)
+        var achievementDesc : TextView = itemView.findViewById(R.id.tv_desc_achievement)
+        var achievementImg : ImageView = itemView.findViewById(R.id.iv_achievement)
+        var achievementUser : Int = 0
 
     }
 
@@ -35,15 +35,15 @@ class AdapterAchievements(private val achievementsList: ArrayList<Achievement>) 
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val tarea = achievementsList[position]
-        holder.idTarea = tarea.id
-        holder.tareaName.text = tarea.name
-        holder.tareaDesc.text = tarea.desc
-        holder.tareaImg.setImageResource(tarea.image)
-        holder.tareaUser = tarea.user
+        val achievement = achievementsList[position]
+        holder.idAchievement = achievement.id
+        holder.achievementName.text = achievement.name
+        holder.achievementDesc.text = achievement.desc
+        holder.achievementImg.setImageResource(achievement.image)
+        holder.achievementUser = achievement.user
 
         holder.itemView.setOnClickListener{
-            onItemClick?.invoke(tarea)
+            onItemClick?.invoke(achievement)
         }
     }
 

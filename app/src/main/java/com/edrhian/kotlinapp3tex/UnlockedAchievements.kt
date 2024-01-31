@@ -50,10 +50,6 @@ class UnlockedAchievements : AppCompatActivity() {
         var achievementsList : ArrayList<Achievement> = ArrayList()
 
         achievementsList.add(Achievement(1, "hola", "Adios", R.mipmap.ic_launcher_round, 1))
-        achievementsList.add(Achievement(2, "hola", "Adios", R.mipmap.ic_launcher_round, 1))
-        achievementsList.add(Achievement(3, "hola", "Adios", R.mipmap.ic_launcher_round, 1))
-        achievementsList.add(Achievement(4, "hola", "Adios", R.mipmap.ic_launcher_round, 1))
-        achievementsList.add(Achievement(5, "hola", "Adios", R.mipmap.ic_launcher_round, 1))
 
         return achievementsList
     }
