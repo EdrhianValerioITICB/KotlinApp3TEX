@@ -19,7 +19,8 @@ class AdapterAchievements(private val achievementsList: ArrayList<Achievement>) 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         var idAchievement : Int = 0
         var achievementName : TextView = itemView.findViewById(R.id.tv_name_achievement)
-        var achievementDesc : TextView = itemView.findViewById(R.id.tv_desc_achievement)
+        //var achievementDesc : TextView = itemView.findViewById(R.id.tv_desc_achievement)
+        //var achievementDesc : TextView = itemView.findViewById(R.id.tv_desc_achievement)
         var achievementImg : ImageView = itemView.findViewById(R.id.iv_achievement)
         var achievementUser : Int = 0
 
@@ -38,7 +39,7 @@ class AdapterAchievements(private val achievementsList: ArrayList<Achievement>) 
         val achievement = achievementsList[position]
         holder.idAchievement = achievement.id
         holder.achievementName.text = achievement.name
-        holder.achievementDesc.text = achievement.desc
+        //holder.achievementDesc.text = achievement.desc
         holder.achievementImg.setImageResource(achievement.image)
         holder.achievementUser = achievement.user
 

@@ -44,6 +44,8 @@
         <activity android:name=".TutorialFive"></activity>
         <activity android:name=".TutorialSix"></activity>
         <activity android:name=".UnlockedAchievements"></activity>
+        <activity android:name=".AchievementDesc"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"></activity>
 
 
     </application>

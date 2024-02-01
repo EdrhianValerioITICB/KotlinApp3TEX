@@ -42,14 +42,27 @@ class UnlockedAchievements : AppCompatActivity() {
         recyclerView.adapter = adapterAchievements
 
         adapterAchievements.onItemClick  = {
-            Toast.makeText(this, "ID: " + it.id, Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "ID: " + it.id, Toast.LENGTH_SHORT).show()
+            val i = Intent(this, AchievementDesc::class.java)
+            i.putExtra("descripcion", it.desc)
+            startActivity(i)
         }
     }
 
     fun getAchievementsList() : ArrayList<Achievement>{
         var achievementsList : ArrayList<Achievement> = ArrayList()
 
-        achievementsList.add(Achievement(1, "hola", "Adios", R.mipmap.ic_launcher_round, 1))
+        achievementsList.add(Achievement(1, "La primera de muchas", "Gana una partida", R.drawable.baseline_lock_open_24, 1))
+        achievementsList.add(Achievement(2, "La primera de muchas (desgraciadamente)", "Pierde una partida", R.drawable.baseline_lock_open_24, 1))
+        achievementsList.add(Achievement(3, "¿Y ahora qué?", "Empata una partida", R.drawable.baseline_lock_open_24, 1))
+        achievementsList.add(Achievement(4, "Tic Tac", "Gana una partida por falta de tiempo del oponente", R.drawable.baseline_lock_open_24, 1))
+        achievementsList.add(Achievement(5, "Piensa rápido", "Pierde una partida por falta de tiempo", R.drawable.baseline_lock_open_24, 1))
+        achievementsList.add(Achievement(6, "Principiante", "Gana 10 partidas", R.drawable.baseline_lock_open_24, 1))
+        achievementsList.add(Achievement(7, "Avanzado", "Gana 100 partidas", R.drawable.baseline_lock_open_24, 1))
+        achievementsList.add(Achievement(8, "Maestro de las fichas", "Gana 1000 partidas", R.drawable.baseline_lock_open_24, 1))
+        achievementsList.add(Achievement(9, "Juego mental", "Gana una partida por abandono de oponente", R.drawable.baseline_lock_open_24, 1))
+        achievementsList.add(Achievement(10, "ALT+F4", "Pierde una partida por abandono", R.drawable.baseline_lock_open_24, 1))
+
 
         return achievementsList
     }
