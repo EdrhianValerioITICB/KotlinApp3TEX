@@ -64,10 +64,6 @@ class Login : AppCompatActivity() {
         }
     }
 
-    fun toBack(view: View) {
-        super.onBackPressed()
-    }
-
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }

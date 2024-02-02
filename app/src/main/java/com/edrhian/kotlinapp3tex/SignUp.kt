@@ -54,11 +54,11 @@ class SignUp : AppCompatActivity() {
         }
 
 
-        menuButton = findViewById(R.id.btn_menu)
-        menuButton.setOnClickListener {
-            val intent = Intent(this, Menu::class.java)
-            startActivity(intent)
-        }
+//        menuButton = findViewById(R.id.btn_menu)
+//        menuButton.setOnClickListener {
+//            val intent = Intent(this, Menu::class.java)
+//            startActivity(intent)
+//        }
     }
 
     private fun registerUser() {
