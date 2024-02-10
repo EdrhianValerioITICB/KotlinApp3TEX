@@ -21,7 +21,7 @@
 
     <TextView
         android:id="@+id/tv_title"
-        style="@style/Title"
+        style="@style/Titulos"
         android:layout_marginTop="60dp"
         android:text="@string/sonido"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
 
     <ImageButton
         android:id="@+id/btn_account"
-        style="@style/ProfileButton"
+        style="@style/BotonPerfil"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginTop="8dp"
@@ -41,7 +41,7 @@
 
     <ImageButton
         android:id="@+id/btn_menu"
-        style="@style/BackButton"
+        style="@style/BotonImagen"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginTop="8dp"
@@ -52,7 +52,7 @@
 
     <Switch
         android:id="@+id/sw_sound"
-        style="@style/ShortBodyText"
+        style="@style/TextoCorto"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -66,7 +66,7 @@
 
     <Switch
         android:id="@+id/sw_music2"
-        style="@style/ShortBodyText"
+        style="@style/TextoCorto"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"

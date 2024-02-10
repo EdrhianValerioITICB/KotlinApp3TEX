@@ -22,7 +22,7 @@
 
     <TextView
         android:id="@+id/g_title"
-        style="@style/Title"
+        style="@style/Titulos"
         android:layout_marginTop="60dp"
         android:text="@string/perfil"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +32,7 @@
 
     <Button
         android:id="@+id/btn_offline"
-        style="@style/NormalButton"
+        style="@style/BotonNormal"
         android:layout_marginTop="41dp"
         android:onClick="toUnlockedAchivements"
         android:text="@string/logros_desbloqueados"
@@ -43,7 +43,7 @@
 
     <ImageButton
         android:id="@+id/btn_account"
-        style="@style/BackButton"
+        style="@style/BotonImagen"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="145dp"
@@ -76,7 +76,7 @@
 
             <TextView
                 android:id="@+id/textView2"
-                style="@style/ShortBodyText"
+                style="@style/TextoCorto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -85,7 +85,7 @@
 
             <TextView
                 android:id="@+id/textView3"
-                style="@style/ShortBodyText"
+                style="@style/TextoCorto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -101,7 +101,7 @@
 
             <TextView
                 android:id="@+id/textView4"
-                style="@style/ShortBodyText"
+                style="@style/TextoCorto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -110,7 +110,7 @@
 
             <TextView
                 android:id="@+id/textView5"
-                style="@style/ShortBodyText"
+                style="@style/TextoCorto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -126,7 +126,7 @@
 
             <TextView
                 android:id="@+id/textView6"
-                style="@style/ShortBodyText"
+                style="@style/TextoCorto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -135,7 +135,7 @@
 
             <TextView
                 android:id="@+id/textView7"
-                style="@style/ShortBodyText"
+                style="@style/TextoCorto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -146,7 +146,7 @@
 
     <ImageButton
         android:id="@+id/btn_menu"
-        style="@style/BackButton"
+        style="@style/BotonImagen"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginTop="8dp"

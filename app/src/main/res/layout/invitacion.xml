@@ -22,7 +22,7 @@
 
     <TextView
         android:id="@+id/g_title"
-        style="@style/Title"
+        style="@style/Titulos"
         android:layout_marginTop="60dp"
         android:text="@string/invitacion"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +31,7 @@
 
     <Button
         android:id="@+id/btn_join"
-        style="@style/NormalButton"
+        style="@style/BotonNormal"
         android:layout_marginTop="27dp"
         android:onClick="toGame"
         android:shadowColor="@color/shadow_color"
@@ -43,7 +43,7 @@
 
     <Button
         android:id="@+id/btn_create"
-        style="@style/NormalButton"
+        style="@style/BotonNormal"
         android:layout_marginTop="27dp"
         android:onClick="toGame"
         android:shadowColor="@color/shadow_color"
@@ -56,7 +56,7 @@
 
     <ImageButton
         android:id="@+id/btn_account"
-        style="@style/ProfileButton"
+        style="@style/BotonPerfil"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginTop="8dp"
@@ -68,7 +68,7 @@
 
     <ImageButton
         android:id="@+id/btn_menu"
-        style="@style/BackButton"
+        style="@style/BotonImagen"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginTop="8dp"

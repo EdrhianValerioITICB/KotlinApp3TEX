@@ -29,7 +29,7 @@
 
         <TextView
             android:id="@+id/g_title"
-            style="@style/Title"
+            style="@style/Titulos"
             android:layout_marginTop="60dp"
             android:text="@string/titulo_juego"
             app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
 
         <Button
             android:id="@+id/btn_online"
-            style="@style/NormalButton"
+            style="@style/BotonNormal"
             android:layout_marginTop="50dp"
 
             android:onClick="toOnline"
@@ -52,7 +52,7 @@
 
         <Button
             android:id="@+id/btn_offline"
-            style="@style/NormalButton"
+            style="@style/BotonNormal"
             android:layout_marginTop="41dp"
             android:onClick="toOffline"
             android:text="@string/offline"
@@ -63,7 +63,7 @@
 
         <TextView
             android:id="@+id/tv_login"
-            style="@style/LongBodyText"
+            style="@style/TextoLargo"
             android:layout_width="41dp"
             android:layout_height="41dp"
             android:layout_marginTop="16dp"
@@ -75,7 +75,7 @@
 
         <ImageButton
             android:id="@+id/btn_menu"
-            style="@style/BackButton"
+            style="@style/BotonImagen"
             android:layout_width="41dp"
             android:layout_height="41dp"
             android:layout_marginTop="8dp"
@@ -86,7 +86,7 @@
 
         <ImageView
             android:id="@+id/iv_logo"
-            style="@style/Table"
+            style="@style/Tabla"
             android:layout_width="119dp"
             android:layout_height="119dp"
             android:layout_marginStart="68dp"

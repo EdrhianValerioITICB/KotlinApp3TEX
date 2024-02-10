@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/NormalButton"
+    style="@style/BotonNormal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="25dp"
@@ -19,7 +19,7 @@
 
         <TextView
             android:id="@+id/tv_name_achievement"
-            style="@style/AchievementTitle"
+            style="@style/TituloLogro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"

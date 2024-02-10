@@ -21,7 +21,7 @@
 
     <TextView
         android:id="@+id/tv_title"
-        style="@style/Title"
+        style="@style/Titulos"
         android:layout_marginTop="60dp"
         android:text="@string/lenguaje"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
 
     <Button
         android:id="@+id/btn_dark"
-        style="@style/NormalButton"
+        style="@style/BotonNormal"
         android:layout_marginTop="63dp"
 
         android:shadowColor="@color/shadow_color"
@@ -42,7 +42,7 @@
 
     <Button
         android:id="@+id/btn_light"
-        style="@style/NormalButton"
+        style="@style/BotonNormal"
         android:layout_marginTop="41dp"
         android:text="@string/ingles"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +52,7 @@
 
     <Button
         android:id="@+id/btn_apply"
-        style="@style/NormalButton"
+        style="@style/BotonNormal"
         android:layout_marginTop="124dp"
         android:onClick="toBack"
         android:text="@string/aplicar_cambios"
@@ -63,7 +63,7 @@
 
     <ImageButton
         android:id="@+id/btn_account"
-        style="@style/ProfileButton"
+        style="@style/BotonPerfil"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginTop="8dp"
@@ -74,7 +74,7 @@
 
     <ImageButton
         android:id="@+id/btn_menu"
-        style="@style/BackButton"
+        style="@style/BotonImagen"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginTop="8dp"

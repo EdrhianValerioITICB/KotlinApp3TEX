@@ -40,7 +40,7 @@
 
     <TextView
         android:id="@+id/tv_title"
-        style="@style/Title"
+        style="@style/Titulos"
         android:layout_marginTop="56dp"
         android:text="@string/logros_bloqueados"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +51,7 @@
 
     <ImageButton
         android:id="@+id/btn_account"
-        style="@style/ProfileButton"
+        style="@style/BotonPerfil"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginTop="8dp"
@@ -62,7 +62,7 @@
 
     <ImageButton
         android:id="@+id/btn_menu"
-        style="@style/BackButton"
+        style="@style/BotonImagen"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginTop="8dp"

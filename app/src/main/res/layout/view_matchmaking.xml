@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/g_text"
-        style="@style/WaitingText"
+        style="@style/TextoDeEspera"
         android:layout_width="261dp"
         android:layout_height="39dp"
         android:layout_marginStart="81dp"
@@ -24,7 +24,7 @@
 
     <Button
         android:id="@+id/btn_online"
-        style="@style/CancelButton"
+        style="@style/BotonCancelar"
         android:layout_marginTop="267dp"
         android:onClick="toBack"
         android:shadowColor="@color/shadow_color"
@@ -37,7 +37,7 @@
 
     <ImageButton
         android:id="@+id/btn_account"
-        style="@style/BackButton"
+        style="@style/BotonImagen"
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:layout_marginTop="60dp"
