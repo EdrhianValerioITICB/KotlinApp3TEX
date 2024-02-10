@@ -42,7 +42,7 @@
         android:id="@+id/tv_title"
         style="@style/Title"
         android:layout_marginTop="56dp"
-        android:text="@string/blocked_achievements"
+        android:text="@string/logros_bloqueados"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

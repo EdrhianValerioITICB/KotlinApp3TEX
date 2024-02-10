@@ -23,7 +23,7 @@
         android:id="@+id/g_title"
         style="@style/Title"
         android:layout_marginTop="60dp"
-        android:text="@string/game_title"
+        android:text="@string/titulo_juego"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

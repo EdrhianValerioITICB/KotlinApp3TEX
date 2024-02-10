@@ -24,7 +24,7 @@
         android:id="@+id/g_title"
         style="@style/Title"
         android:layout_marginTop="60dp"
-        android:text="@string/profile"
+        android:text="@string/perfil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +35,7 @@
         style="@style/NormalButton"
         android:layout_marginTop="41dp"
         android:onClick="toUnlockedAchivements"
-        android:text="@string/unlocked_achivements"
+        android:text="@string/logros_desbloqueados"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/name"
+                android:text="@string/nombre"
                 android:textColor="@color/txt_negro" />
 
             <TextView
@@ -89,7 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/games_tied"
+                android:text="@string/partidas_empatadas"
                 android:textColor="@color/txt_negro" />
         </TableRow>
 
@@ -105,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/games_won"
+                android:text="@string/partidas_ganadas"
                 android:textColor="@color/txt_negro" />
 
             <TextView
@@ -114,7 +114,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/time_played"
+                android:text="@string/tiempo_jugado"
                 android:textColor="@color/txt_negro" />
         </TableRow>
 
@@ -130,7 +130,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/games_lost"
+                android:text="@string/partidas_perdidas"
                 android:textColor="@color/txt_negro" />
 
             <TextView
