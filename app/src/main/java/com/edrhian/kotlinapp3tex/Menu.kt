@@ -14,7 +14,7 @@ class Menu : AppCompatActivity() {
     }
 
     fun toProfile(view: View) {
-        val intent = Intent(this, Profile::class.java).apply {}
+        val intent = Intent(this, Perfil::class.java).apply {}
         startActivity(intent)
     }
 

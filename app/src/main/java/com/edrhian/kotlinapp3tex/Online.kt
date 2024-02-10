@@ -19,12 +19,12 @@ class Online : AppCompatActivity() {
     }
 
     fun toInvitation(view: View) {
-        val intent = Intent(this, Invitation::class.java).apply {}
+        val intent = Intent(this, Invitacion::class.java).apply {}
         startActivity(intent)
     }
 
     fun toProfile(view: View) {
-        val intent = Intent(this, Profile::class.java).apply {}
+        val intent = Intent(this, Perfil::class.java).apply {}
         startActivity(intent)
     }
 

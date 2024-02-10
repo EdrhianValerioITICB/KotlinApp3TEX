@@ -13,7 +13,7 @@
         android:theme="@style/Theme.KotlinApp3TEX"
         tools:targetApi="31">
         <activity
-            android:name=".FirstView"
+            android:name=".PrimeraVista"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,30 +21,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Game"></activity>
-        <activity android:name=".Invitation"></activity>
-        <activity android:name=".Language"></activity>
-        <activity android:name=".LockedAchievements"></activity>
+        <activity android:name=".Juego"></activity>
+        <activity android:name=".Invitacion"></activity>
+        <activity android:name=".Lenguaje"></activity>
+        <activity android:name=".LogrosBloqueados"></activity>
         <activity android:name=".Login"></activity>
         <activity android:name=".Matchmaking"></activity>
         <activity android:name=".Menu"></activity>
         <activity android:name=".Offline"></activity>
         <activity android:name=".Online"></activity>
-        <activity android:name=".PieceStyle"></activity>
-        <activity android:name=".Profile"></activity>
-        <activity android:name=".Settings"></activity>
+        <activity android:name=".EstiloPieza"></activity>
+        <activity android:name=".Perfil"></activity>
+        <activity android:name=".Configuracion"></activity>
         <activity android:name=".SignUp"></activity>
-        <activity android:name=".Sound"></activity>
-        <activity android:name=".Theme"></activity>
+        <activity android:name=".Sonido"></activity>
+        <activity android:name=".Tema"></activity>
         <activity android:name=".TutorialMainViewPager"></activity>
-        <activity android:name=".TutorialOne"></activity>
-        <activity android:name=".TutorialTwo"></activity>
-        <activity android:name=".TutorialThree"></activity>
-        <activity android:name=".TutorialFour"></activity>
-        <activity android:name=".TutorialFive"></activity>
-        <activity android:name=".TutorialSix"></activity>
-        <activity android:name=".UnlockedAchievements"></activity>
-        <activity android:name=".AchievementDesc"
+        <activity android:name=".TutorialA"></activity>
+        <activity android:name=".TutorialB"></activity>
+        <activity android:name=".TutorialC"></activity>
+        <activity android:name=".TutorialD"></activity>
+        <activity android:name=".TutorialE"></activity>
+        <activity android:name=".TutorialF"></activity>
+        <activity android:name=".LogrosDesbloqueados"></activity>
+        <activity android:name=".LogroDescripcion"
             android:theme="@style/Theme.AppCompat.Light.Dialog"></activity>
 
 

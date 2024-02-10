@@ -1,32 +1,40 @@
 package com.edrhian.kotlinapp3tex
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 
-class FirstView : AppCompatActivity() {
+class Configuracion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_first_view)
+        setContentView(R.layout.configuracion)
     }
 
-    fun toLogin(view: View) {
-        val intent = Intent(this, Login::class.java).apply {}
-        startActivity(intent)
-    }
-    fun toOnline(view: View) {
-        val intent = Intent(this, Online::class.java).apply {}
+    fun toLanguage(view: View) {
+        val intent = Intent(this, Lenguaje::class.java).apply {}
         startActivity(intent)
     }
 
-    fun toOffline(view: View) {
-        val intent = Intent(this, Offline::class.java).apply {}
+    fun toSound(view: View) {
+        val intent = Intent(this, Sonido::class.java).apply {}
         startActivity(intent)
     }
+
+    fun toTheme(view: View) {
+        val intent = Intent(this, Tema::class.java).apply {}
+        startActivity(intent)
+    }
+
+    fun toPieceStyle(view: View) {
+        val intent = Intent(this, EstiloPieza::class.java).apply {}
+        startActivity(intent)
+    }
+
     fun toProfile(view: View) {
-        val intent = Intent(this, Profile::class.java).apply {}
+        val intent = Intent(this, Perfil::class.java).apply {}
         startActivity(intent)
     }
 
@@ -55,5 +63,8 @@ class FirstView : AppCompatActivity() {
 
         // Mostrar la View transparente al mostrar el fragmento del menú
         transparentView.visibility = View.VISIBLE
+    }
+    fun toBack(view: View) {
+        super.onBackPressed()
     }
 }

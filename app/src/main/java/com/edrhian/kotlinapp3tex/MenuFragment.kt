@@ -40,7 +40,7 @@ class MenuFragment : Fragment() {
 
         val btnOption2 = view.findViewById<Button>(R.id.btn_menu_config)
         btnOption2.setOnClickListener {
-            val intent = Intent(requireContext(), Settings::class.java)
+            val intent = Intent(requireContext(), Configuracion::class.java)
             startActivity(intent)
         }
         val btnOption3 = view.findViewById<Button>(R.id.btn_menu_tuto)
@@ -50,7 +50,7 @@ class MenuFragment : Fragment() {
         }
         val btnOption4 = view.findViewById<Button>(R.id.btn_menu_logout)
         btnOption4.setOnClickListener {
-            val intent = Intent(requireContext(), FirstView::class.java)
+            val intent = Intent(requireContext(), PrimeraVista::class.java)
             startActivity(intent)
         }
         val btnOption5 = view.findViewById<Button>(R.id.btn_menu_privacy)

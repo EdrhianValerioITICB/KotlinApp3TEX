@@ -7,13 +7,14 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 
-class Sound : AppCompatActivity() {
+class Juego : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_sound)
+        setContentView(R.layout.juego)
     }
+
     fun toProfile(view: View) {
-        val intent = Intent(this, Profile::class.java).apply {}
+        val intent = Intent(this, Perfil::class.java).apply {}
         startActivity(intent)
     }
     fun showMenuFragment(view: View) {
@@ -41,8 +42,5 @@ class Sound : AppCompatActivity() {
 
         // Mostrar la View transparente al mostrar el fragmento del menú
         transparentView.visibility = View.VISIBLE
-    }
-    fun toBack(view: View) {
-        super.onBackPressed()
     }
 }

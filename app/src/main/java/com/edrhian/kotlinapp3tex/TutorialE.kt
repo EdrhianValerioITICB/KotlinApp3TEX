@@ -6,12 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
-class TutorialTwo : Fragment(){
+class TutorialE : Fragment(){
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedBInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.view_tutorial_2, container, false) as ViewGroup
+        return inflater.inflate(R.layout.tutorial_e, container, false) as ViewGroup
     }
 }

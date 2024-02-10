@@ -4,26 +4,25 @@ package com.edrhian.kotlinapp3tex
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.edrhian.kotlinapp3tex.controller.AdapterAchievements
-import com.edrhian.kotlinapp3tex.data.Achievement
+import com.edrhian.kotlinapp3tex.controller.AdapterLogros
+import com.edrhian.kotlinapp3tex.data.Logro
 
-class LockedAchievements : AppCompatActivity() {
+class LogrosBloqueados : AppCompatActivity() {
 
-    private lateinit var adapterAchievements: AdapterAchievements
+    private lateinit var adapterLogros: AdapterLogros
     private lateinit var recyclerView: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_locked_achievements)
+        setContentView(R.layout.logros_bloqueados)
 
     }
 
     fun toProfile(view: View) {
-        val intent = Intent(this, Profile::class.java).apply {}
+        val intent = Intent(this, Perfil::class.java).apply {}
         startActivity(intent)
     }
 
@@ -33,25 +32,25 @@ class LockedAchievements : AppCompatActivity() {
         recyclerView = findViewById(R.id.rv_list_achievements)
         recyclerView.layoutManager = layoutManager
         recyclerView.setHasFixedSize(true)
-        adapterAchievements = AdapterAchievements(getAchievementsList())
-        recyclerView.adapter = adapterAchievements
-        adapterAchievements.onItemClick  = {
+        adapterLogros = AdapterLogros(getAchievementsList())
+        recyclerView.adapter = adapterLogros
+        adapterLogros.onItemClick  = {
             //Toast.makeText(this, "ID: " + it.id, Toast.LENGTH_SHORT).show()
-            val i = Intent(this, AchievementDesc::class.java)
+            val i = Intent(this, LogroDescripcion::class.java)
             i.putExtra("descripcion", it.desc)
             startActivity(i)
         }
     }
 
-    fun getAchievementsList() : ArrayList<Achievement>{
-        var achievementsList : ArrayList<Achievement> = ArrayList()
-        achievementsList.add(Achievement(11, "Pasando el tiempo", "Juega un total de 1 hora", R.drawable.baseline_lock_24, 1))
-        achievementsList.add(Achievement(12, "Aflojale al 3T-EX", "Juega un total de 1 dia", R.drawable.baseline_lock_24, 1))
-        achievementsList.add(Achievement(13, "Jugador inseguro", "Tarda más de 5 minutos en poner una pieza", R.drawable.baseline_lock_24, 1))
-        achievementsList.add(Achievement(14, "He perdido la cuenta", "Coloca 1000 piezas en el tablero", R.drawable.baseline_lock_24, 1))
-        achievementsList.add(Achievement(15, "Dedicación", "Haz login en el juego durante 7 dias seguidos", R.drawable.baseline_lock_24, 1))
-        achievementsList.add(Achievement(16, "Cara a cara (literalmente)", "Juega una partida local", R.drawable.baseline_lock_24, 1))
-        achievementsList.add(Achievement(17, "En contra de ChatgpTEX", "Juega una partida contra la máquina", R.drawable.baseline_lock_24, 1))
+    fun getAchievementsList() : ArrayList<Logro>{
+        var achievementsList : ArrayList<Logro> = ArrayList()
+        achievementsList.add(Logro(11, "Pasando el tiempo", "Juega un total de 1 hora", R.drawable.baseline_lock_24, 1))
+        achievementsList.add(Logro(12, "Aflojale al 3T-EX", "Juega un total de 1 dia", R.drawable.baseline_lock_24, 1))
+        achievementsList.add(Logro(13, "Jugador inseguro", "Tarda más de 5 minutos en poner una pieza", R.drawable.baseline_lock_24, 1))
+        achievementsList.add(Logro(14, "He perdido la cuenta", "Coloca 1000 piezas en el tablero", R.drawable.baseline_lock_24, 1))
+        achievementsList.add(Logro(15, "Dedicación", "Haz login en el juego durante 7 dias seguidos", R.drawable.baseline_lock_24, 1))
+        achievementsList.add(Logro(16, "Cara a cara (literalmente)", "Juega una partida local", R.drawable.baseline_lock_24, 1))
+        achievementsList.add(Logro(17, "En contra de ChatgpTEX", "Juega una partida contra la máquina", R.drawable.baseline_lock_24, 1))
         return achievementsList
     }
 

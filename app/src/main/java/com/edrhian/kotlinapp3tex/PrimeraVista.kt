@@ -6,18 +6,28 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 
-class Language : AppCompatActivity() {
+class PrimeraVista : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_language)
+        setContentView(R.layout.primera_vista)
     }
-    fun toProfile(view: View) {
-        val intent = Intent(this, Profile::class.java).apply {}
+
+    fun toLogin(view: View) {
+        val intent = Intent(this, Login::class.java).apply {}
+        startActivity(intent)
+    }
+    fun toOnline(view: View) {
+        val intent = Intent(this, Online::class.java).apply {}
         startActivity(intent)
     }
 
-    fun toBack(view: View) {
-        super.onBackPressed()
+    fun toOffline(view: View) {
+        val intent = Intent(this, Offline::class.java).apply {}
+        startActivity(intent)
+    }
+    fun toProfile(view: View) {
+        val intent = Intent(this, Perfil::class.java).apply {}
+        startActivity(intent)
     }
 
     fun showMenuFragment(view: View) {

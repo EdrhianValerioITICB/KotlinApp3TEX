@@ -1,22 +1,21 @@
 package com.edrhian.kotlinapp3tex
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 
-class PieceStyle : AppCompatActivity() {
+class Sonido : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_piece_style)
+        setContentView(R.layout.sonido)
     }
-
     fun toProfile(view: View) {
-        val intent = Intent(this, Profile::class.java).apply {}
+        val intent = Intent(this, Perfil::class.java).apply {}
         startActivity(intent)
     }
-
     fun showMenuFragment(view: View) {
         val menuFragment = MenuFragment()
 

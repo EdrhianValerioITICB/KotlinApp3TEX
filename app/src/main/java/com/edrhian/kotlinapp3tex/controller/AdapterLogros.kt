@@ -8,14 +8,14 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.edrhian.kotlinapp3tex.R
-import com.edrhian.kotlinapp3tex.data.Achievement
+import com.edrhian.kotlinapp3tex.data.Logro
 
 
-class AdapterAchievements(private val achievementsList: ArrayList<Achievement>) : RecyclerView.Adapter<AdapterAchievements.ViewHolder>(){
+class AdapterLogros(private val achievementsList: ArrayList<Logro>) : RecyclerView.Adapter<AdapterLogros.ViewHolder>(){
 
     lateinit var context: Context
 
-    var onItemClick : ((Achievement) -> Unit)? = null
+    var onItemClick : ((Logro) -> Unit)? = null
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         var idAchievement : Int = 0
         var achievementName : TextView = itemView.findViewById(R.id.tv_name_achievement)

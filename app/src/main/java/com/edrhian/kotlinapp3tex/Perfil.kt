@@ -7,13 +7,13 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 
-class Profile : AppCompatActivity() {
+class Perfil : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_profile)
+        setContentView(R.layout.perfil)
     }
     fun toUnlockedAchivements(view: View) {
-        val intent = Intent(this, UnlockedAchievements::class.java).apply {}
+        val intent = Intent(this, LogrosDesbloqueados::class.java).apply {}
         startActivity(intent)
     }
 

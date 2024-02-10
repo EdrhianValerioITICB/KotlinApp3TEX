@@ -14,7 +14,7 @@ class Offline : AppCompatActivity() {
     }
 
     fun toProfile(view: View) {
-        val intent = Intent(this, Profile::class.java).apply {}
+        val intent = Intent(this, Perfil::class.java).apply {}
         startActivity(intent)
     }
 
@@ -46,7 +46,7 @@ class Offline : AppCompatActivity() {
     }
 
     fun toGame(view: View) {
-        val intent = Intent(this, Game::class.java).apply {}
+        val intent = Intent(this, Juego::class.java).apply {}
         startActivity(intent)
     }
 

@@ -7,35 +7,23 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 
-class Settings : AppCompatActivity() {
+class Invitacion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_settings)
-    }
-
-    fun toLanguage(view: View) {
-        val intent = Intent(this, Language::class.java).apply {}
-        startActivity(intent)
-    }
-
-    fun toSound(view: View) {
-        val intent = Intent(this, Sound::class.java).apply {}
-        startActivity(intent)
-    }
-
-    fun toTheme(view: View) {
-        val intent = Intent(this, Theme::class.java).apply {}
-        startActivity(intent)
-    }
-
-    fun toPieceStyle(view: View) {
-        val intent = Intent(this, PieceStyle::class.java).apply {}
-        startActivity(intent)
+        setContentView(R.layout.invitacion)
     }
 
     fun toProfile(view: View) {
-        val intent = Intent(this, Profile::class.java).apply {}
+        val intent = Intent(this, Perfil::class.java).apply {}
         startActivity(intent)
+    }
+    fun toGame(view: View) {
+        val intent = Intent(this, Juego::class.java).apply {}
+        startActivity(intent)
+    }
+
+    fun toBack(view: View) {
+        super.onBackPressed()
     }
 
     fun showMenuFragment(view: View) {
@@ -64,7 +52,5 @@ class Settings : AppCompatActivity() {
         // Mostrar la View transparente al mostrar el fragmento del menú
         transparentView.visibility = View.VISIBLE
     }
-    fun toBack(view: View) {
-        super.onBackPressed()
-    }
+
 }
