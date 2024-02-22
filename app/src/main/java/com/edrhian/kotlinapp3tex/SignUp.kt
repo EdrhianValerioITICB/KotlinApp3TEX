@@ -25,7 +25,7 @@ class SignUp : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_signup)
+        setContentView(R.layout.signup)
 
 
         userNameEditText = findViewById(R.id.editTextName)
@@ -86,9 +86,9 @@ class SignUp : AppCompatActivity() {
             val result = database.insert("Users", null, values)
 
             if (result != -1L) {
-                Log.d("MiApp", "Usuario registrado correctamente")
+                Log.d("MiApp", "User registrado correctamente")
 
-                Toast.makeText(this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "User registrado correctamente", Toast.LENGTH_SHORT).show()
 
                 val intent = Intent(this, Menu::class.java)
                 startActivity(intent)

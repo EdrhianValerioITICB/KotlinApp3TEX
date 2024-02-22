@@ -13,7 +13,7 @@ class TutorialMainViewPager : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_tutorial_main_viewpager)
+        setContentView(R.layout.tutorial_main_viewpager)
         //TODO(String)
         Toast.makeText(this, "Desliza la pantalla hacia la derecha y la izquierda para avanzar o retroceder", Toast.LENGTH_LONG).show()
         Toast.makeText(this, "Para salir pulsa el boton de retroceder de tu móvil", Toast.LENGTH_LONG).show()

@@ -10,7 +10,7 @@ import androidx.fragment.app.FragmentTransaction
 class Menu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_menu)
+        setContentView(R.layout.menu)
     }
 
     fun toProfile(view: View) {
