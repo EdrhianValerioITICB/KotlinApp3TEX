@@ -23,6 +23,7 @@
     <string name="matchmaking_one">Encontrando oponente.</string>
     <string name="matchmaking_two">Encontrando oponente..</string>
     <string name="matchmaking_three">Encontrando oponente...</string>
+    <string name="matchmaking">Encontrando oponente...</string>
     <string name="jugador_uno">Jugador 1</string>
     <string name="jugador_dos">Jugador 2</string>
     <string name="temporizador">30:00</string>
