@@ -73,6 +73,52 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
+    <TextView
+        android:id="@+id/passwordTooltip"
+        android:layout_width="238dp"
+        android:layout_height="52dp"
+        android:text="* Requisitos de contraseña: Al menos 8 caracteres, Una mayúscula, Una minúscula, y 6 dígitos."
+        android:textColor="#FF0000"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <TextView
+        android:id="@+id/userNameTooltip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="* El nombre ya existe"
+        android:textColor="#FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <TextView
+        android:id="@+id/emailTooltip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="* El correo electrónico no es válido"
+        android:textColor="#FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <TextView
+        android:id="@+id/repeatPasswordTooltip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="* Las contraseñas no coinciden"
+        android:textColor="#FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         style="@style/EditText"
