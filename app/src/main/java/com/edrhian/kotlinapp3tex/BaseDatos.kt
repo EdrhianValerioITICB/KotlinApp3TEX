@@ -32,11 +32,16 @@ class BaseDatos(context: Context?, name: String?, factory: SQLiteDatabase.Cursor
             "IMAGEN INT," +
             "BLOQUEADO Int," +
             "USUARIO INT)"
+
+    val tabla_users_logros = "CREATE TABLE Users_Logros(" +
+            "ID_User INTEGER," +
+            "ID_Logro INTEGER)"
+
     val insert_logros = "INSERT INTO Logros (NOMBRE, DESCRIPCION, IMAGEN, BLOQUEADO, USUARIO) VALUES " +
             "('La primera de muchas','Gana una partida',"+R.drawable.baseline_lock_24+", 1, 1)," +
             "('La primera de muchas (desgraciadamente)','Pierde una partida',"+R.drawable.baseline_lock_24+", 1, 1)," +
             "('¿Y ahora qué?','Empata una partida',"+R.drawable.baseline_lock_24+", 1, 1)," +
-            "('Tic Tac','Gana una partida por falta de tiempo del oponente',"+R.drawable.baseline_lock_24+", 1, 1)," +
+            "('Tic Tac' ,'Gana una partida por falta de tiempo del oponente',"+R.drawable.baseline_lock_24+", 1, 1)," +
             "('Piensa rápido','Pierde una partida por falta de tiempo',"+R.drawable.baseline_lock_24+", 1, 1)," +
             "('Principiante','Gana 10 partidas',"+R.drawable.baseline_lock_24+", 1, 1)," +
             "('Avanzado','Gana 100 partidas',"+R.drawable.baseline_lock_24+", 1, 1)," +
@@ -50,6 +55,7 @@ class BaseDatos(context: Context?, name: String?, factory: SQLiteDatabase.Cursor
             "('Dedicación','Haz login en el juego durante 7 dias seguidos',"+R.drawable.baseline_lock_24+", 1, 1)," +
             "('Cara a cara (literalmente)','Juega una partida local',"+R.drawable.baseline_lock_24+", 1, 1)," +
             "('En contra de ChatgpTTTEX','Juega una partida contra la máquina',"+R.drawable.baseline_lock_24+", 1, 1)"
+
     override fun onCreate(database: SQLiteDatabase?){
         database?.execSQL(user_table)
         database?.execSQL(stats_table)
@@ -58,7 +64,6 @@ class BaseDatos(context: Context?, name: String?, factory: SQLiteDatabase.Cursor
         database?.execSQL(logros_tabla)
         database?.execSQL(insert_logros)
     }
-
 
     override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int){
 

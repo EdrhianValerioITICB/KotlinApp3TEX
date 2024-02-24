@@ -1,5 +1,6 @@
 package com.edrhian.kotlinapp3tex
 
+import android.content.ContentValues
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.edrhian.kotlinapp3tex.controller.AdapterLogros
 import com.edrhian.kotlinapp3tex.data.Logro
+
 
 class LogrosDesbloqueados : AppCompatActivity() {
 
@@ -50,19 +52,6 @@ class LogrosDesbloqueados : AppCompatActivity() {
 
     fun getAchievementsList() : ArrayList<Logro>{
         var achievementsList : ArrayList<Logro> = ArrayList()
-
-        achievementsList.add(Logro(1, "La primera de muchas", "Gana una partida", R.drawable.baseline_lock_open_24, 1))
-        achievementsList.add(Logro(2, "La primera de muchas (desgraciadamente)", "Pierde una partida", R.drawable.baseline_lock_open_24, 1))
-        achievementsList.add(Logro(3, "¿Y ahora qué?", "Empata una partida", R.drawable.baseline_lock_open_24, 1))
-        achievementsList.add(Logro(4, "Tic Tac", "Gana una partida por falta de tiempo del oponente", R.drawable.baseline_lock_open_24, 1))
-        achievementsList.add(Logro(5, "Piensa rápido", "Pierde una partida por falta de tiempo", R.drawable.baseline_lock_open_24, 1))
-        achievementsList.add(Logro(6, "Principiante", "Gana 10 partidas", R.drawable.baseline_lock_open_24, 1))
-        achievementsList.add(Logro(7, "Avanzado", "Gana 100 partidas", R.drawable.baseline_lock_open_24, 1))
-        achievementsList.add(Logro(8, "Maestro de las fichas", "Gana 1000 partidas", R.drawable.baseline_lock_open_24, 1))
-        achievementsList.add(Logro(9, "Juego mental", "Gana una partida por abandono de oponente", R.drawable.baseline_lock_open_24, 1))
-        achievementsList.add(Logro(10, "ALT+F4", "Pierde una partida por abandono", R.drawable.baseline_lock_open_24, 1))
-
-
         return achievementsList
     }
 

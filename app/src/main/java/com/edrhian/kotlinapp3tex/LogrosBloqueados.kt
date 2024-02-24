@@ -44,13 +44,31 @@ class LogrosBloqueados : AppCompatActivity() {
 
     fun getAchievementsList() : ArrayList<Logro>{
         var achievementsList : ArrayList<Logro> = ArrayList()
-        achievementsList.add(Logro(11, "Pasando el tiempo", "Juega un total de 1 hora", R.drawable.baseline_lock_24, 1))
-        achievementsList.add(Logro(12, "Aflojale al 3T-EX", "Juega un total de 1 dia", R.drawable.baseline_lock_24, 1))
-        achievementsList.add(Logro(13, "Jugador inseguro", "Tarda más de 5 minutos en poner una pieza", R.drawable.baseline_lock_24, 1))
-        achievementsList.add(Logro(14, "He perdido la cuenta", "Coloca 1000 piezas en el tablero", R.drawable.baseline_lock_24, 1))
-        achievementsList.add(Logro(15, "Dedicación", "Haz login en el juego durante 7 dias seguidos", R.drawable.baseline_lock_24, 1))
-        achievementsList.add(Logro(16, "Cara a cara (literalmente)", "Juega una partida local", R.drawable.baseline_lock_24, 1))
-        achievementsList.add(Logro(17, "En contra de ChatgpTEX", "Juega una partida contra la máquina", R.drawable.baseline_lock_24, 1))
+
+        val admin = BaseDatos(this, "bd", null, 1)
+        val bd = admin.writableDatabase
+
+        val fila = bd.rawQuery("SELECT ID, NOMBRE, DESCRIPCION, IMAGEN, BLOQUEADO, USUARIO FROM Logros", null)
+
+        var id = 0
+        var name = ""
+        var desc = ""
+        var imagen = 0
+        var bloqueado = 0
+        var user = 0
+
+        if (fila.moveToFirst()){
+            do {
+                id = fila.getString(0).toInt()
+                name = fila.getString(1)
+                desc = fila.getString(2)
+                imagen = fila.getString(3).toInt()
+                bloqueado = fila.getString(4).toInt()
+                user = fila.getString(5).toInt()
+                achievementsList.add(Logro(id, name, desc, imagen, bloqueado, user))
+            } while (fila.moveToNext())
+        }
+
         return achievementsList
     }
 
