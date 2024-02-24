@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_login)
+        setContentView(R.layout.login)
     }
 
     fun toSignUp(view: View) {

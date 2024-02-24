@@ -10,7 +10,7 @@ import androidx.fragment.app.FragmentTransaction
 class Offline : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_offline)
+        setContentView(R.layout.offline)
     }
 
     fun toProfile(view: View) {
