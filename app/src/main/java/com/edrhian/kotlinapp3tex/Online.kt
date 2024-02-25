@@ -2,28 +2,34 @@ package com.edrhian.kotlinapp3tex
 
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 
 class Online : AppCompatActivity() {
+    private lateinit var mp: MediaPlayer
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.online)
+        mp = MediaPlayer.create(this, R.raw.button_click)
     }
 
     fun toMatchmaking(view: View) {
+        mp.start()
         val intent = Intent(this, Matchmaking::class.java).apply {}
         startActivity(intent)
     }
 
     fun toInvitation(view: View) {
+        mp.start()
         val intent = Intent(this, Invitacion::class.java).apply {}
         startActivity(intent)
     }
 
     fun toProfile(view: View) {
+        mp.start()
         val intent = Intent(this, Perfil::class.java).apply {}
         startActivity(intent)
     }

@@ -1,6 +1,6 @@
 package com.edrhian.kotlinapp3tex
 
-
+import android.media.MediaPlayer
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -8,11 +8,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 
 class Sonido : AppCompatActivity() {
+    private lateinit var mp: MediaPlayer
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.sonido)
+        mp = MediaPlayer.create(this, R.raw.button_click)
     }
     fun toProfile(view: View) {
+        mp.start()
         val intent = Intent(this, Perfil::class.java).apply {}
         startActivity(intent)
     }

@@ -1,39 +1,46 @@
 package com.edrhian.kotlinapp3tex
 
-
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 
 class Configuracion : AppCompatActivity() {
+    private lateinit var mp: MediaPlayer
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.configuracion)
+        mp = MediaPlayer.create(this, R.raw.button_click)
     }
 
     fun toLanguage(view: View) {
+        mp.start()
         val intent = Intent(this, Lenguaje::class.java).apply {}
         startActivity(intent)
     }
 
     fun toSound(view: View) {
+        mp.start()
         val intent = Intent(this, Sonido::class.java).apply {}
         startActivity(intent)
     }
 
     fun toTheme(view: View) {
+        mp.start()
         val intent = Intent(this, Tema::class.java).apply {}
         startActivity(intent)
     }
 
     fun toPieceStyle(view: View) {
+        mp.start()
         val intent = Intent(this, EstiloPieza::class.java).apply {}
         startActivity(intent)
     }
 
     fun toProfile(view: View) {
+        mp.start()
         val intent = Intent(this, Perfil::class.java).apply {}
         startActivity(intent)
     }
@@ -57,7 +64,6 @@ class Configuracion : AppCompatActivity() {
             supportFragmentManager.beginTransaction()
                 .remove(menuFragment)
                 .commit()
-
             transparentView.visibility = View.GONE
         }
 

@@ -3,6 +3,7 @@ package com.edrhian.kotlinapp3tex
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -11,12 +12,15 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class Login : AppCompatActivity() {
+    private lateinit var mp: MediaPlayer
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
+        mp = MediaPlayer.create(this, R.raw.button_click)
     }
 
     fun toSignUp(view: View) {
+        mp.start()
         val intent = Intent(this, SignUp::class.java).apply {}
         startActivity(intent)
     }
@@ -62,6 +66,7 @@ class Login : AppCompatActivity() {
         } else {
             showToast("Debes ingresar un nombre y una contraseña.")
         }
+        mp.start()
     }
 
     private fun showToast(message: String) {
