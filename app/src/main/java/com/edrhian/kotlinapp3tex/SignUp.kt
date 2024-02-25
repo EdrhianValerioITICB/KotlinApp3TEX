@@ -15,7 +15,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.TooltipCompat
 import androidx.core.widget.addTextChangedListener
 
-class SignUp : AppCompatActivity() {
+
+open class SignUp : AppCompatActivity() {
 
     private lateinit var userNameEditText: EditText
     private lateinit var emailEditText: EditText
@@ -31,9 +32,9 @@ class SignUp : AppCompatActivity() {
     private lateinit var repeatPasswordTooltip: TextView
 
     @SuppressLint("MissingInflatedId")
-    override fun onCreate(savedInstanceState: Bundle?) {
+    public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_signup)
+        setContentView(R.layout.signup)
 
         userNameEditText = findViewById(R.id.editTextName)
         emailEditText = findViewById(R.id.editTextTextEmailAddress)
@@ -163,19 +164,19 @@ class SignUp : AppCompatActivity() {
         }
     }
 
-    private fun isValidPassword(password: String): Boolean {
+    public fun isValidPassword(password: String): Boolean {
         val passwordPattern =
             "(?=.*[A-Z])(?=.*[a-z])(?=.*\\d.*\\d.*\\d.*\\d.*\\d.*\\d).{8,}|(?=.*[A-Z])(?=.*[a-z])(?=.*\\d.*\\d.*[a-zA-Z].*\\d.*\\d).{8,}".toRegex()
         return passwordPattern.matches(password)
     }
 
-    private fun isValidMail(mail: String): Boolean {
+    public fun isValidMail(mail: String): Boolean {
         val mailPattern =
             ".+\\@.+\\..+".toRegex()
         return mailPattern.matches(mail)
     }
 
-    private fun userNameExists(userName: String): Boolean {
+    public fun userNameExists(userName: String): Boolean {
         val databaseHelper = BaseDatos(this, "myDatabase", null, 1)
         val database = databaseHelper.readableDatabase
 
@@ -189,3 +190,4 @@ class SignUp : AppCompatActivity() {
     }
 
 }
+
