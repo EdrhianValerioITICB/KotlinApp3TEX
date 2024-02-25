@@ -3,6 +3,7 @@ package com.edrhian.kotlinapp3tex
 import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -16,7 +17,7 @@ import androidx.appcompat.widget.TooltipCompat
 import androidx.core.widget.addTextChangedListener
 
 class SignUp : AppCompatActivity() {
-
+    private lateinit var mp: MediaPlayer
     private lateinit var userNameEditText: EditText
     private lateinit var emailEditText: EditText
     private lateinit var passwordEditText: EditText
@@ -33,8 +34,8 @@ class SignUp : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_signup)
-
+        setContentView(R.layout.signup)
+        mp = MediaPlayer.create(this, R.raw.button_click)
         userNameEditText = findViewById(R.id.editTextName)
         emailEditText = findViewById(R.id.editTextTextEmailAddress)
         passwordEditText = findViewById(R.id.editTextPassword)
@@ -161,15 +162,16 @@ class SignUp : AppCompatActivity() {
         } else {
             Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show()
         }
+        mp.start()
     }
 
-    private fun isValidPassword(password: String): Boolean {
+    public fun isValidPassword(password: String): Boolean {
         val passwordPattern =
             "(?=.*[A-Z])(?=.*[a-z])(?=.*\\d.*\\d.*\\d.*\\d.*\\d.*\\d).{8,}|(?=.*[A-Z])(?=.*[a-z])(?=.*\\d.*\\d.*[a-zA-Z].*\\d.*\\d).{8,}".toRegex()
         return passwordPattern.matches(password)
     }
 
-    private fun isValidMail(mail: String): Boolean {
+    public fun isValidMail(mail: String): Boolean {
         val mailPattern =
             ".+\\@.+\\..+".toRegex()
         return mailPattern.matches(mail)
