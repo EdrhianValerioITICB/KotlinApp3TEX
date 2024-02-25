@@ -1,5 +1,6 @@
 package com.edrhian.kotlinapp3tex
 
+import android.media.MediaPlayer
 import android.content.ContentValues
 import android.content.Context
 import android.content.Intent
@@ -14,7 +15,7 @@ import com.edrhian.kotlinapp3tex.data.Logro
 
 
 class LogrosDesbloqueados : AppCompatActivity() {
-
+    private lateinit var mp: MediaPlayer
     lateinit var context: Context
     private lateinit var adapterLogros: AdapterLogros
     private lateinit var recyclerView: RecyclerView
@@ -22,7 +23,7 @@ class LogrosDesbloqueados : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.logros_desbloqueados)
-
+        mp = MediaPlayer.create(this, R.raw.button_click)
     }
 //    override fun onCreateView(
 //        inflater: LayoutInflater,
@@ -47,6 +48,7 @@ class LogrosDesbloqueados : AppCompatActivity() {
             val i = Intent(this, LogroDescripcion::class.java)
             i.putExtra("descripcion", it.desc)
             startActivity(i)
+            mp.start()
         }
     }
 
@@ -56,11 +58,13 @@ class LogrosDesbloqueados : AppCompatActivity() {
     }
 
     fun toProfile(view: View) {
+        mp.start()
         val intent = Intent(this, Perfil::class.java).apply {}
         startActivity(intent)
     }
 
     fun toLockedAchivements(view: View) {
+        mp.start()
         val intent = Intent(this, LogrosBloqueados::class.java).apply {}
         startActivity(intent)
     }

@@ -1,7 +1,7 @@
 package com.edrhian.kotlinapp3tex
 
-
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -12,16 +12,17 @@ import com.edrhian.kotlinapp3tex.controller.AdapterLogros
 import com.edrhian.kotlinapp3tex.data.Logro
 
 class LogrosBloqueados : AppCompatActivity() {
-
+    private lateinit var mp: MediaPlayer
     private lateinit var adapterLogros: AdapterLogros
     private lateinit var recyclerView: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.logros_bloqueados)
-
+        mp = MediaPlayer.create(this, R.raw.button_click)
     }
 
     fun toProfile(view: View) {
+        mp.start()
         val intent = Intent(this, Perfil::class.java).apply {}
         startActivity(intent)
     }
@@ -39,6 +40,7 @@ class LogrosBloqueados : AppCompatActivity() {
             val i = Intent(this, LogroDescripcion::class.java)
             i.putExtra("descripcion", it.desc)
             startActivity(i)
+            mp.start()
         }
     }
 

@@ -1,5 +1,6 @@
 package com.edrhian.kotlinapp3tex
 
+import android.media.MediaPlayer
 import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Intent
@@ -16,7 +17,7 @@ import androidx.appcompat.widget.TooltipCompat
 import androidx.core.widget.addTextChangedListener
 
 class SignUp : AppCompatActivity() {
-
+    private lateinit var mp: MediaPlayer
     private lateinit var userNameEditText: EditText
     private lateinit var emailEditText: EditText
     private lateinit var passwordEditText: EditText
@@ -34,7 +35,7 @@ class SignUp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.signup)
-
+        mp = MediaPlayer.create(this, R.raw.button_click)
         userNameEditText = findViewById(R.id.editTextName)
         emailEditText = findViewById(R.id.editTextTextEmailAddress)
         passwordEditText = findViewById(R.id.editTextPassword)
@@ -161,6 +162,7 @@ class SignUp : AppCompatActivity() {
         } else {
             Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show()
         }
+        mp.start()
     }
 
     private fun isValidPassword(password: String): Boolean {
