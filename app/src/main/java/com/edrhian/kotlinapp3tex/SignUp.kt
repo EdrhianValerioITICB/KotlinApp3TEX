@@ -33,7 +33,7 @@ class SignUp : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_signup)
+        setContentView(R.layout.signup)
 
         userNameEditText = findViewById(R.id.editTextName)
         emailEditText = findViewById(R.id.editTextTextEmailAddress)
