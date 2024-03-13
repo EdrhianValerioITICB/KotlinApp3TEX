@@ -34,4 +34,6 @@
     <color name="txt_azul">#0000FF</color>
     <!-- shadow color -->
     <color name="shadow_color">#000000</color>
+
+    <color name="transparent">#00000000</color>
 </resources>

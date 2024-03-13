@@ -29,6 +29,18 @@
         <item name="android:textAlignment">center</item>
     </style>
 
+    <style name="BotonLogin" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/txt_negro</item>
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_background_transparent</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:elevation">20dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
     <style name="BotonCancelar" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/txt_negro</item>
         <item name="android:layout_width">212dp</item>
