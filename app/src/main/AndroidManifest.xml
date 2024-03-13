@@ -13,6 +13,7 @@
         android:theme="@style/Theme.KotlinApp3TEX"
         tools:targetApi="31">
         <activity
+            android:screenOrientation="portrait"
             android:name=".PrimeraVista"
             android:exported="true">
             <intent-filter>
@@ -21,31 +22,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Juego"></activity>
-        <activity android:name=".Invitacion"></activity>
-        <activity android:name=".Lenguaje"></activity>
-        <activity android:name=".LogrosBloqueados"></activity>
-        <activity android:name=".Login"></activity>
-        <activity android:name=".Matchmaking"></activity>
-        <activity android:name=".Menu"></activity>
-        <activity android:name=".Offline"></activity>
-        <activity android:name=".Online"></activity>
-        <activity android:name=".EstiloPieza"></activity>
-        <activity android:name=".Perfil"></activity>
-        <activity android:name=".Configuracion"></activity>
-        <activity android:name=".SignUp"></activity>
-        <activity android:name=".Sonido"></activity>
-        <activity android:name=".Tema"></activity>
-        <activity android:name=".TutorialMainViewPager"></activity>
-        <activity android:name=".TutorialA"></activity>
-        <activity android:name=".TutorialB"></activity>
-        <activity android:name=".TutorialC"></activity>
-        <activity android:name=".TutorialD"></activity>
-        <activity android:name=".TutorialE"></activity>
-        <activity android:name=".TutorialF"></activity>
-        <activity android:name=".LogrosDesbloqueados"></activity>
+        <activity android:name=".Juego" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Invitacion" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Lenguaje" android:screenOrientation="portrait"></activity>
+        <activity android:name=".LogrosBloqueados" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Login" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Matchmaking" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Menu" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Offline" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Online" android:screenOrientation="portrait"></activity>
+        <activity android:name=".EstiloPieza" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Perfil" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Configuracion" android:screenOrientation="portrait"></activity>
+        <activity android:name=".SignUp" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Sonido" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Tema" android:screenOrientation="portrait"></activity>
+        <activity android:name=".TutorialMainViewPager" android:screenOrientation="portrait"></activity>
+        <activity android:name=".TutorialA" android:screenOrientation="portrait"></activity>
+        <activity android:name=".TutorialB" android:screenOrientation="portrait"></activity>
+        <activity android:name=".TutorialC" android:screenOrientation="portrait"></activity>
+        <activity android:name=".TutorialD" android:screenOrientation="portrait"></activity>
+        <activity android:name=".TutorialE" android:screenOrientation="portrait"></activity>
+        <activity android:name=".TutorialF" android:screenOrientation="portrait"></activity>
+        <activity android:name=".LogrosDesbloqueados" android:screenOrientation="portrait"></activity>
         <activity android:name=".LogroDescripcion"
-            android:theme="@style/Theme.AppCompat.Light.Dialog"></activity>
+            android:theme="@style/Theme.AppCompat.Light.Dialog" android:screenOrientation="portrait"></activity>
 
 
     </application>
