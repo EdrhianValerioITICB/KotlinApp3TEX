@@ -69,4 +69,6 @@
     <string name="clasico">CLÁSICO</string>
     <string name="extremo">EXTREME</string>
     <string name="no_cuenta">No tienes cuenta?</string>
+    <string name="generar_informe">Generar Informe</string>
+    <string name="escogeranyo">Escoge el mes y el año de los datos que quieras recuperar</string>
 </resources>
