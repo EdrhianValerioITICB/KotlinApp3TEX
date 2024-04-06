@@ -1,18 +1,35 @@
 package com.edrhian.kotlinapp3tex
 
-import android.media.MediaPlayer
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
+import android.widget.ToggleButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 
 class Offline : AppCompatActivity() {
     private lateinit var mp: MediaPlayer
+    private lateinit var tgb : ToggleButton
+    private lateinit var tgb1 : ToggleButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.offline)
         mp = MediaPlayer.create(this, R.raw.button_click)
+        tgb = findViewById(R.id.btn_maquina)
+        tgb1 = findViewById(R.id.btn_dos)
+    }
+
+    fun maquina(view: View){
+        tgb.isChecked == true
+        tgb1.isChecked = false
+
+
+    }
+
+    fun dos(view : View){
+        tgb1.isChecked == true
+        tgb.isChecked = false
     }
 
     fun toProfile(view: View) {

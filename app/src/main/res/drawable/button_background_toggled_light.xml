@@ -1,9 +1,10 @@
-<?xml version = "1.0" encoding = "utf-8" ?>
+<!-- button_background.xml -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Estado permanente cuando el botón está presionado -->
     <item android:state_checked="false">
         <shape android:shape="rectangle">
             <!-- Estilo de fondo cuando está presionado -->
+            <stroke android:width="3dp" android:color="@color/shadow_color" />
             <corners android:radius="30dp" />
             <gradient
                 android:endColor="@color/boton_claro_end"
