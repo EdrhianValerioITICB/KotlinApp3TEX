@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_light">
 
+
     <FrameLayout
         android:id="@+id/fragmentContainer"
         android:layout_width="293dp"
@@ -17,7 +18,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0" >
+
+    </FrameLayout>
 
 
     <TextView
@@ -40,6 +43,17 @@
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <Button
+        android:id="@+id/informe"
+        style="@style/BotonNormal"
+        android:layout_marginTop="41dp"
+        android:onClick="toInformes"
+        android:text="INFORMES"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_offline" />
 
     <ImageButton
         android:id="@+id/btn_account"

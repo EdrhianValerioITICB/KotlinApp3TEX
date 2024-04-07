@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -29,7 +30,7 @@
         <activity android:name=".Matchmaking" android:screenOrientation="portrait"></activity>
         <activity android:name=".Menu" android:screenOrientation="portrait"></activity>
         <activity android:name=".Offline" android:screenOrientation="portrait"></activity>
-        <activity android:name=".Online" android:screenOrientation="portrait"></activity>w
+        <activity android:name=".Online" android:screenOrientation="portrait"></activity>
         <activity android:name=".EstiloPieza" android:screenOrientation="portrait"></activity>
         <activity android:name=".Perfil" android:screenOrientation="portrait"></activity>
         <activity android:name=".Configuracion" android:screenOrientation="portrait"></activity>
@@ -43,6 +44,7 @@
         <activity android:name=".TutorialD" android:screenOrientation="portrait"></activity>
         <activity android:name=".TutorialE" android:screenOrientation="portrait"></activity>
         <activity android:name=".TutorialF" android:screenOrientation="portrait"></activity>
+        <activity android:name=".GeneradorInforme" android:screenOrientation="portrait"></activity>
         <activity android:name=".LogrosDesbloqueados" android:screenOrientation="portrait"></activity>
         <activity android:name=".LogroDescripcion"
             android:theme="@style/Theme.AppCompat.Light.Dialog"></activity>

@@ -23,7 +23,7 @@ class BaseDatos(context: Context?, name: String?, factory: SQLiteDatabase.Cursor
     //TODO Una vez eliminada la tabla se puede borrar estos statements
     val delete_tabla_logros = "DROP TABLE IF EXISTS Achievements"
     val delete_tabla_logros2 = "DROP TABLE IF EXISTS Logros"
-
+    //val delete_tabla_modos = "DROP TABLE IF EXISTS Modos"
     val logros_tabla = "CREATE TABLE Logros" +
             "(ID INTEGER PRIMARY KEY AUTOINCREMENT," +
             "NOMBRE TEXT," +
@@ -41,9 +41,64 @@ class BaseDatos(context: Context?, name: String?, factory: SQLiteDatabase.Cursor
             "NUM_PARTIDAS INT," +
             "MODO_JUEGO TEXT)"
 
-    val insert_modos = "INSERT INTO Modos (FECHA, NUM_PARTIDAS, MODO_JUEGO) VALUES"+
-            "(2024-01-01, 20, 'COMPETITIVO'),"+
-            "(2024-01-01, 20, 'COMPETITIVO')"
+    val insert_modos = "INSERT INTO Modos (FECHA, NUM_PARTIDAS, MODO_JUEGO) VALUES" +
+            "('2024-01-01', 20, 'COMPETITIVO')," +
+            "('2024-01-01', 15, 'CASUAL')," +
+            "('2024-01-01', 25, 'POR INVITACION')," +
+            "('2024-01-01', 15, 'MAQUINA')," +
+            "('2024-01-01', 10, '2 JUGADORES')," +
+
+            "('2024-01-10', 20, 'COMPETITIVO')," +
+            "('2024-01-10', 15, 'CASUAL')," +
+            "('2024-01-10', 15, 'POR INVITACION')," +
+            "('2024-01-10', 15, 'MAQUINA')," +
+            "('2024-01-10', 10, '2 JUGADORES')," +
+
+            "('2024-01-21', 20, 'COMPETITIVO')," +
+            "('2024-01-21', 35, 'CASUAL')," +
+            "('2024-01-21', 25, 'POR INVITACION')," +
+            "('2024-01-21', 15, 'MAQUINA')," +
+            "('2024-01-21', 30, '2 JUGADORES')," +
+
+            "('2021-09-01', 20, 'COMPETITIVO')," +
+            "('2021-09-01', 15, 'CASUAL')," +
+            "('2021-09-01', 25, 'POR INVITACION')," +
+            "('2021-09-01', 15, 'MAQUINA')," +
+            "('2021-09-01', 30, '2 JUGADORES')," +
+
+            "('2021-09-10', 20, 'COMPETITIVO')," +
+            "('2021-09-10', 15, 'CASUAL')," +
+            "('2021-09-10', 25, 'POR INVITACION')," +
+            "('2021-09-10', 35, 'MAQUINA')," +
+            "('2021-09-10', 10, '2 JUGADORES')," +
+
+            "('2021-09-27', 40, 'COMPETITIVO')," +
+            "('2021-09-27', 35, 'CASUAL')," +
+            "('2021-09-27', 25, 'POR INVITACION')," +
+            "('2021-09-27', 15, 'MAQUINA')," +
+            "('2021-09-27', 20, '2 JUGADORES')," +
+
+            "('2023-11-01', 20, 'COMPETITIVO')," +
+            "('2023-11-01', 15, 'CASUAL')," +
+            "('2023-11-01', 25, 'POR INVITACION')," +
+            "('2023-11-01', 35, 'MAQUINA')," +
+            "('2023-11-01', 10, '2 JUGADORES')," +
+
+            "('2023-11-10', 30, 'COMPETITIVO')," +
+            "('2023-11-10', 15, 'CASUAL')," +
+            "('2023-11-10', 25, 'POR INVITACION')," +
+            "('2023-11-10', 15, 'MAQUINA')," +
+            "('2023-11-10', 10, '2 JUGADORES')," +
+
+            "('2023-11-27', 20, 'COMPETITIVO')," +
+            "('2023-11-27', 15, 'CASUAL')," +
+            "('2023-11-27', 35, 'POR INVITACION')," +
+            "('2023-11-27', 25, 'MAQUINA')," +
+            "('2023-11-27', 30, '2 JUGADORES')"
+
+
+
+
 
     val insert_logros = "INSERT INTO Logros (NOMBRE, DESCRIPCION, IMAGEN, BLOQUEADO, USUARIO) VALUES " +
             "('La primera de muchas','Gana una partida',"+R.drawable.baseline_lock_24+", 1, 1)," +
@@ -69,6 +124,7 @@ class BaseDatos(context: Context?, name: String?, factory: SQLiteDatabase.Cursor
         database?.execSQL(stats_table)
         database?.execSQL(delete_tabla_logros)
         database?.execSQL(delete_tabla_logros2)
+        //database?.execSQL(delete_tabla_modos)
         database?.execSQL(logros_tabla)
         database?.execSQL(insert_logros)
         database?.execSQL(tabla_modos)
