@@ -17,7 +17,10 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0" >
+
+
+    </FrameLayout>
 
 
     <TextView
@@ -29,27 +32,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_dark"
+    <ToggleButton
+        android:id="@+id/btn_maquina"
         style="@style/BotonNormal"
         android:layout_marginTop="63dp"
-
         android:shadowColor="@color/shadow_color"
-        android:text="@string/casual"
+        android:textOff="@string/casual"
+        android:textOn="@string/casual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
-    <Button
-        android:id="@+id/btn_light"
+    <ToggleButton
+        android:id="@+id/btn_dos"
         style="@style/BotonNormal"
         android:layout_marginTop="41dp"
-        android:text="@string/competitivo"
+        android:textOff="@string/competitivo"
+        android:textOn="@string/competitivo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_dark" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_maquina" />
 
     <Button
         android:id="@+id/btn_theme"
@@ -60,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_light" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_dos" />
 
     <Button
         android:id="@+id/btn_apply"

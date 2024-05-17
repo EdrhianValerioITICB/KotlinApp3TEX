@@ -1,7 +1,7 @@
 package com.edrhian.kotlinapp3tex
 
-import android.media.MediaPlayer
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +17,12 @@ class Perfil : AppCompatActivity() {
     fun toUnlockedAchivements(view: View) {
         mp.start()
         val intent = Intent(this, LogrosDesbloqueados::class.java).apply {}
+        startActivity(intent)
+    }
+
+    fun toInformes(view: View) {
+        mp.start()
+        val intent = Intent(this, GeneradorInforme::class.java).apply {}
         startActivity(intent)
     }
 

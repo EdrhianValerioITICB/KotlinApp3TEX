@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -46,6 +47,7 @@
         <activity android:name=".TutorialD" android:screenOrientation="portrait"></activity>
         <activity android:name=".TutorialE" android:screenOrientation="portrait"></activity>
         <activity android:name=".TutorialF" android:screenOrientation="portrait"></activity>
+        <activity android:name=".GeneradorInforme" android:screenOrientation="portrait"></activity>
         <activity android:name=".LogrosDesbloqueados" android:screenOrientation="portrait"></activity>
         <activity android:name=".LogroDescripcion"
             android:theme="@style/Theme.AppCompat.Light.Dialog"></activity>

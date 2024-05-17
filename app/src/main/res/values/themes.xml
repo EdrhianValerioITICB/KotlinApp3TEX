@@ -22,7 +22,7 @@
         <item name="android:layout_width">212dp</item>
         <item name="android:layout_height">42dp</item>
         <item name="android:backgroundTint">@null</item>
-        <item name="android:background">@drawable/button_background_light</item>
+        <item name="android:background">@drawable/my_btn_toggle</item>
         <item name="android:fontFamily">@font/roboto_condensed_regular</item>
         <item name="android:elevation">20dp</item>
         <item name="android:textSize">16sp</item>

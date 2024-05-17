@@ -7,17 +7,18 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_light">
 
-<!--    <FrameLayout-->
-<!--        android:id="@+id/fragmentContainer"-->
-<!--        android:layout_width="293dp"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:elevation="10dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.0" />-->
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/fragmentContainer"-->
+    <!--        android:layout_width="293dp"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:elevation="10dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
 
     <TextView
         android:id="@+id/textView13"
@@ -28,10 +29,16 @@
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="16dp"
         android:text="@string/escogeranyo"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintBottom_toTopOf="@+id/et_mes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+    <com.echo.holographlibrary.BarGraph
+        android:id="@+id/graphBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
 
     <TextView
         android:id="@+id/tv_title2"
@@ -82,14 +89,14 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/cb_media_activos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="Media de Usuarios Activos" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/cb_cantidad_tipos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -109,19 +116,20 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_generar_informe"
         style="@style/BotonNormal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
+        android:onClick="GenerarInforme"
         android:padding="15dp"
         android:text="Generar Informe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    <EditText
-        android:id="@+id/editTextNumber"
+    <NumberPicker
+        android:id="@+id/et_mes"
         android:layout_width="167dp"
         android:layout_height="49dp"
         android:layout_marginStart="28dp"
@@ -132,8 +140,8 @@
         app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextNumber2"
+    <NumberPicker
+        android:id="@+id/et_anyo"
         android:layout_width="167dp"
         android:layout_height="49dp"
         android:layout_marginBottom="4dp"
@@ -142,6 +150,6 @@
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber" />
+        app:layout_constraintStart_toEndOf="@+id/et_mes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
