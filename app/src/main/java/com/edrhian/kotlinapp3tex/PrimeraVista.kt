@@ -1,12 +1,12 @@
 package com.edrhian.kotlinapp3tex
 
-import android.media.MediaPlayer
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
-import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 
@@ -20,6 +20,8 @@ class PrimeraVista : AppCompatActivity() {
         val animacion = AnimationUtils.loadAnimation(this, R.anim.logo_anim)
         logo.startAnimation(animacion)
         mp = MediaPlayer.create(this, R.raw.button_click)
+
+        showPopup()
     }
 
     fun toLogin(view: View) {
@@ -44,7 +46,25 @@ class PrimeraVista : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun showMenuFragment(view: View) {
+
+
+
+    private fun showPopup() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Bienvenido a 3TEX")
+        builder.setMessage("Parece que es tu primera vez en 3TEX. Para continuar, por favor regístrate. Al hacer clic en 'IR', serás dirigido a la página de registro.")
+        builder.setPositiveButton("IR") { dialog, _ ->
+            dialog.dismiss()
+            val intent = Intent(this, SignUp::class.java)
+            startActivity(intent)
+        }
+
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
+
+
+fun showMenuFragment(view: View) {
         val menuFragment = MenuFragment()
 
         // Agregar el fragmento al contenedor

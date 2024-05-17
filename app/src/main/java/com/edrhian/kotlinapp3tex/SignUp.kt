@@ -32,6 +32,8 @@ class SignUp : AppCompatActivity() {
     private lateinit var repeatPasswordTooltip: TextView
 
     private lateinit var submitButton: Button
+
+    private lateinit var submitButton2: Button
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,6 +50,7 @@ class SignUp : AppCompatActivity() {
         repeatPasswordTooltip = findViewById<TextView>(R.id.repeatPasswordTooltip)
 
         submitButton = findViewById(R.id.submitButton)
+        submitButton2 = findViewById(R.id.submitButton2)
 
         // Set tooltips for EditTexts
         TooltipCompat.setTooltipText(userNameEditText, "El nombre ya existe")
@@ -81,6 +84,12 @@ class SignUp : AppCompatActivity() {
         submitButton.setOnClickListener {
             val i = Intent(this, LogroDescripcion::class.java)
             i.putExtra("descripcion", "* Requisitos de contraseña: Al menos 8 caracteres, Una mayúscula, Una minúscula, y 6 dígitos.")
+            startActivity(i)
+        }
+
+        submitButton2.setOnClickListener {
+            val i = Intent(this, LogroDescripcion::class.java)
+            i.putExtra("descripcion", "* Ejemplo de correo: nombre@ejemplo.com")
             startActivity(i)
         }
 

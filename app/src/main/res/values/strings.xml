@@ -1,5 +1,5 @@
 <resources>
-    <string name="nombre_app">KotlinApp3TEX</string>
+    <string name="nombre_app">3TEX</string>
     <string name="titulo_juego">TIC TAC TOE EXTREME</string>
     <string name="online">ONLINE</string>
     <string name="offline">OFFLINE</string>
