@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.KotlinApp3TEX"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_light">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Titulos"
+        android:layout_marginTop="60dp"
+        android:text="Tutorial de instalación"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/transparentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tutorial_body5"
+                style="@style/TextoLargo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:paddingTop="10dp"
+                android:text="Bienvenido al tutorial de instalación, aqui podras saber como instalar la aplicacion
+Requisitos de la aplicacion:
+Version de android: 7.1
+;Memoria RAM: 4GB
+;Espacio de almacenamiento minimo: 500MB
+" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/inst_a"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tv_tutorial_body"
+                style="@style/TextoLargo"
+                android:layout_width="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:paddingTop="10dp"
+                android:text="Paso 1: Entra a la Google Play" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/inst_b"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tv_tutorial_body2"
+                style="@style/TextoLargo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:paddingTop="10dp"
+                android:text="Paso 2: Busca el nombre de la aplicación" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/inst_c"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tv_tutorial_body3"
+                style="@style/TextoLargo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:paddingTop="10dp"
+                android:text="Paso 3: Entra dentro de la pagina de la aplicación" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/inst_d"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tv_tutorial_body4"
+                style="@style/TextoLargo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:paddingTop="10dp"
+                android:text="Paso 4: Instala la aplicacion" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

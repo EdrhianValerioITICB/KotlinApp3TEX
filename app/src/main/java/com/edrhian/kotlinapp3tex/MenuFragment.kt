@@ -48,6 +48,11 @@ class MenuFragment : Fragment() {
             val intent = Intent(requireContext(), TutorialMainViewPager::class.java)
             startActivity(intent)
         }
+        val btnOption6 = view.findViewById<Button>(R.id.btn_menu_tuto2)
+        btnOption6.setOnClickListener {
+            val intent = Intent(requireContext(), TutorialInstalacion::class.java)
+            startActivity(intent)
+        }
         val btnOption4 = view.findViewById<Button>(R.id.btn_menu_logout)
         btnOption4.setOnClickListener {
             val intent = Intent(requireContext(), PrimeraVista::class.java)
@@ -57,6 +62,7 @@ class MenuFragment : Fragment() {
         btnOption5.setOnClickListener {
             viewModel.selectOption("Opción 5")
         }
+
 
         // Observar cambios en el ViewModel
         viewModel.selectedOption.observe(viewLifecycleOwner, Observer {
