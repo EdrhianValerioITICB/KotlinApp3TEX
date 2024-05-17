@@ -41,17 +41,10 @@
         <activity android:name=".Sonido" android:screenOrientation="portrait"></activity>
         <activity android:name=".Tema" android:screenOrientation="portrait"></activity>
         <activity android:name=".TutorialMainViewPager" android:screenOrientation="portrait"></activity>
-        <activity android:name=".TutorialA" android:screenOrientation="portrait"></activity>
-        <activity android:name=".TutorialB" android:screenOrientation="portrait"></activity>
-        <activity android:name=".TutorialC" android:screenOrientation="portrait"></activity>
-        <activity android:name=".TutorialD" android:screenOrientation="portrait"></activity>
-        <activity android:name=".TutorialE" android:screenOrientation="portrait"></activity>
-        <activity android:name=".TutorialF" android:screenOrientation="portrait"></activity>
         <activity android:name=".GeneradorInforme" android:screenOrientation="portrait"></activity>
         <activity android:name=".LogrosDesbloqueados" android:screenOrientation="portrait"></activity>
         <activity android:name=".LogroDescripcion"
             android:theme="@style/Theme.AppCompat.Light.Dialog"></activity>
-        <activity android:name=".GeneradorInforme" android:screenOrientation="portrait"></activity>
         <activity android:name=".TutorialInstalacion" android:screenOrientation="portrait"></activity>
 
 
